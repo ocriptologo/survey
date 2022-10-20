@@ -1,0 +1,15 @@
+.coluna-header {
+    background-color:rgb(223, 96, 223); 
+    height: 100vh; 
+    min-height: 500px; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.coluna-perguntas {
+    background-color:rgb(250, 246, 240);
+    height: 100vh;
+    min-height: 500px;
+    align-items: center; 
+    justify-content: center;
+}
