@@ -320,7 +320,7 @@ h6 {
   width: 50%;
   overflow: hidden;
   padding: 50px 115px 50px 90px;
-  background-color: #f6c192;
+  background-color: #f7cf30;
 }
 .wizard-content-1 .job-wizard-left-area:after {
   top: 0;
@@ -330,7 +330,7 @@ h6 {
   right: -295px;
   position: absolute;
   transform: rotate(10deg);
-  background-color: #f1b36c;
+  background-color: #f7d43a;
 }
 .wizard-content-1 .job-wizard-left-area .job-wizard-left-text {
   top: 50%;
