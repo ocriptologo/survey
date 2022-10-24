@@ -17,16 +17,39 @@
 
   <body>
     
+    <!-- Container principal da página -->
     <div class="container-fluid">
       <div class="row">
 
-        <div class="coluna-header col-sm-12 col-md-6 d-flex">
+        <!-- Coluna Header (título / texto sobre a seção) -->
+        <div class="coluna-header col-md-6 col-sm-12 d-flex">
           <div>Título da Seção</div>
         </div>
+        
+        <!-- Coluna Questionário (perguntas + botão) -->
+        <div class="coluna-questionario col-sm-12 col-md-6 col-lg-6">
 
-        <div class="coluna-perguntas col-sm-12 col-md-6 d-flex">
-          <div>Perguntas</div>
+          <!-- Container para as Perguntas -->
+          <div class="container px-4">
+            <div class="row gx-5">
+              <div class="coluna-perguntas col d-flex">
+                <input type="text" class="form-control" placeholder="Texto" aria-label="First name">
+              </div>
+            </div>
+          </div>
+
+          <!-- Container para o Botão -->
+          <div class="container px-4">
+            <div class="row gx-5">
+              <div class="coluna-botao col d-flex">
+                <button type="button" class="btn btn-info">Botão</button>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+      </div>
     </div>
     
 

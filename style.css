@@ -6,10 +6,20 @@
     justify-content: center;
 }
 
-.coluna-perguntas {
+.coluna-questionario {
     background-color:rgb(250, 246, 240);
-    height: 100vh;
-    min-height: 500px;
+}
+
+.coluna-perguntas {
+    height: 90vh; 
+    min-height: 450px; 
     align-items: center; 
     justify-content: center;
+}
+
+.coluna-botao {
+    justify-content: right;
+    align-items: center; 
+    height: 10vh; 
+    min-height: 50px; 
 }
