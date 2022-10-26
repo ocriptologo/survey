@@ -25,9 +25,9 @@
 
   <body>
     
-    <!-- Questão 1 -->
+    <!-- Página 1 -->
     <!-- Container principal da página -->
-    <div id="questão1" class="container-fluid">
+    <div id="página1" class="container-fluid">
       <div class="row">
 
         <!-- Coluna Header (título / texto sobre a seção) -->
@@ -45,11 +45,13 @@
 
                 <div class="row">
 
+                  <!-- Pergunta 1 [Seção 1]-->
                   <label for="nome-museu" class="form-label">Em que museu você trabalha?</label>
                   <div class="mb-3">
                     <input type="text" class="form-control form-control-md" id="nome-museu" placeholder="Nome do Museu">
                   </div>
 
+                  <!-- Pergunta 2 [Seção 1] -->
                   <label for="pais-museu" class="form-label">Em qual país está localizado esse museu?</label>
                   <div class="mb-3">
                     <select class="form-select form-select-md mb-3" id="pais-museu">
@@ -96,7 +98,7 @@
           <div class="container px-4">
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
-                <button type="button" class="btn btn-secondary" href="#" onclick="return show('questão2','questão1');">Próxima Questão</button>
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página2','página1');">Próxima Questão</button>
               </div>
             </div>
           </div>
@@ -106,9 +108,9 @@
       </div>
     </div>
 
-    <!-- Questão 2 -->
+    <!-- Página 2 -->
     <!-- Container principal da página -->
-    <div id="questão2" class="container-fluid" style="display:none">
+    <div id="página2" class="container-fluid" style="display:none">
       <div class="row">
 
         <!-- Coluna Header (título / texto sobre a seção) -->
@@ -126,6 +128,7 @@
 
                 <div class="row">
 
+                  <!-- Pergunta 3 [Seção 1] -->
                   <label for="nome-museu" class="form-label">Questão 2</label>
                   <div class="mb-3">
                     <input type="text" class="form-control form-control-md" id="questao2" placeholder="Questão 2">
@@ -141,8 +144,8 @@
           <div class="container px-4">
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
-                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return show('questão1','questão2');">Questão Anterior</button>             
-                <button type="button" class="btn btn-secondary" href="#" onclick="return show('questão2','questão1');">Próxima Questão</button>
+                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return show('página1','página2');">Questão Anterior</button>             
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página2','página1');">Próxima Questão</button>
               </div>
             </div>
           </div>
