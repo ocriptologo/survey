@@ -352,7 +352,104 @@
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
                 <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return show('página2','página3');">Questão Anterior</button>             
-                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página3','página2');">Próxima Questão</button>
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página4','página3');">Próxima Questão</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Página 4 -->
+    <!-- Container principal da página -->
+    <div id="página4" class="container-fluid" style="display:none">
+      <div class="row">
+
+        <!-- Coluna Header (título / texto sobre a seção) -->
+        <div class="coluna-header col-md-6 col-sm-12 d-flex">
+          <div>Título da Seção</div>
+        </div>
+        
+        <!-- Coluna Questionário (perguntas + botão) -->
+        <div class="coluna-questionario col-sm-12 col-md-6 col-lg-6">
+
+          <!-- Container para as Perguntas -->
+          <div class="container px-4">
+            <div class="row gx-5">
+              <div class="coluna-perguntas col d-flex">
+
+                <div class="row">
+
+                  <!-- Pergunta 5 [Seção 1] -->
+                  <label for="contexto-trabalho-museu" class="form-label">Atualmente você trabalha (assinale todas as opções que desejar):</label>
+
+                  <div id="contexto-trabalho-museu" class="mb-3">
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Na mediação com os públicos" id="mediacao">
+                      <label class="form-check-label" for="mediacao">
+                        Na mediação com os públicos
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Em projetos com públicos específicos" id="publicos-especificos">
+                      <label class="form-check-label" for="publicos-especificos">
+                        Em projetos com públicos específicos
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Em ações itinerantes" id="itinerantes">
+                      <label class="form-check-label" for="itinerantes">
+                        Em ações itinerantes
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Em ações online" id="online">
+                      <label class="form-check-label" for="online">
+                        Em ações online
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Não sei" id="nao-sei">
+                      <label class="form-check-label" for="nao-sei">
+                        Não sei
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="prefiro-nao">
+                      <label class="form-check-label" for="prefiro-nao">
+                        Prefiro não informar
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Outro" id="outro:">
+                      <label class="form-check-label" for="outro:">
+                        Outro
+                      </label>
+                    </div>
+
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Container para o Botão -->
+          <div class="container px-4">
+            <div class="row gx-5">
+              <div class="coluna-botao col d-flex">
+                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return show('página3','página4');">Questão Anterior</button>             
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página4','página3');">Próxima Questão</button>
               </div>
             </div>
           </div>
