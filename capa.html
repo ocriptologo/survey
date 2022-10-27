@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 
   <head>
+
     <!-- Meta tags obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,11 +51,48 @@
 		<p id="p5">Este projeto segue as normas de ética em pesquisa estabelecidas pelo CEPE-IBUSP e está registrado com o número 61062222700005464 na Plataforma Brasil.</p>
 		</p>
 
-	<p></p><p><l1 id="prosseguir">Clique aqui para prosseguir e conhecer as informações sobre a segurança e a ética da sua participação nesta pesquisa:</l1></p>
-	<p><button id="tbotao" type="button" class="btn btn-outline-dark"
+		<p></p><p><l1 id="prosseguir">Clique aqui para prosseguir e conhecer as informações sobre a segurança e a ética da sua participação nesta pesquisa:</l1></p>
+		<p><button id="tbotao" type="button" class="btn btn-outline-dark" style="margin:10px;"
+		data-bs-toggle="modal" data-bs-target="#exampleModal"
+			
+			>Prosseguir</button></p><p></p><p></p>
+		</div>
 	
-		
-		>Prosseguir</button></p><p></p><p></p>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+			  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Termo de Consentimento Livre e Esclarecido</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				Projeto: “Participação, engajamento, inclusão e diálogo em museus de ciências em países da América Latina e Caribe: ações, concepções e políticas públicas”<br><br>
+				1. Sua participação<br><br>Você responderá algumas perguntas sobre o tema citado. Não há respostas certas ou erradas.<br><br>
+				2. Suas informações<br><br>Suas respostas serão somente utilizadas para fins acadêmicos. Você não será identificado(a) e seus dados serão armazenados e protegidos eletronicamente.<br><br>
+				3. Questões de segurança<br><br>Caso você sinta algum desconforto ou incômodo ao responder às perguntas, poderá interromper sua participação e seus dados não serão armazenados. Não existe qualquer custo associado à sua participação, assim como não receberá qualquer pagamento por fazer parte deste estudo.<br><br>
+				4. Seus direitos<br><br>Você tem o direito de solicitar informações adicionais sobre o projeto e/ou interromper sua participação na  pesquisa a qualquer momento. <br><br>
+				<hr>
+				Caso você queira entrar em contato conosco para tirar dúvidas ou saber mais sobre a pesquisa,  envie um e-mail para pesquisamuseus@usp.br. <br><br>
+				Desde já, agradecemos a sua importante participação nesta pesquisa. <br><br>
+				Pesquisadoras(es) responsáveis: Alessandra Fernandes Bizerra (IB -USP), Ana Maria Navas Iannini (Simon Fraser University), Bianca Hipólito de Oliveira (IB-USP), Luisa Massarani (Fiocruz), Rafael Vitame Kauano (FE-USP).
+			  </div>
+			  <form class="modal-footer needs-validation" action=index.html  novalidate>
+			  <div class="col-12">
+		<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+		  <label class="form-check-label" for="invalidCheck">
+			Eu confirmo que li o termo de consentimento e concordo em participar desta pesquisa.
+		  </label>
+		  <div class="invalid-feedback">
+			Você precisa aceitar para continuar.
+		  </div>
+		</div>
+	  	</div>
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+			<button type="submit" class="btn btn-primary">Continuar</button>
+			  </form>
+		</div>
 	</div>
   
 
@@ -64,6 +102,27 @@
 
     <!-- Javascript - Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script>
+		(function () {
+	  'use strict'
+	
+	  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+	  var forms = document.querySelectorAll('.needs-validation')
+	
+	  // Loop over them and prevent submission
+	  Array.prototype.slice.call(forms)
+		.forEach(function (form) {
+		  form.addEventListener('submit', function (event) {
+			if (!form.checkValidity()) {
+			  event.preventDefault()
+			  event.stopPropagation()
+			}
+	
+			form.classList.add('was-validated')
+		  }, false)
+		})
+	})()
+		</script>
   </body>
 
 </html>
