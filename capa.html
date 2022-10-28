@@ -39,7 +39,7 @@
 		<p><button id="tbotao" type="button" class="btn btn-outline-dark" style="margin:10px;"
 		data-bs-toggle="modal" data-bs-target="#exampleModal"
 			
-			>Prosseguir</button></p><p></p><p></p>
+			>Continuar</button></p><p></p><p></p>
 		</div>
 	
 		<!-- Modal -->
@@ -50,40 +50,39 @@
 			<h5 class="modal-title" id="exampleModalLabel">Termo de Consentimento Livre e Esclarecido</h5>
 			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			  </div>
-			  <div class="modal-body">
-				Projeto: “Participação, engajamento, inclusão e diálogo em museus de ciências em países da América Latina e Caribe: ações, concepções e políticas públicas”<br><br>
-				1. Sua participação<br><br>Você responderá algumas perguntas sobre o tema citado. Não há respostas certas ou erradas.<br><br>
-				2. Suas informações<br><br>Suas respostas serão somente utilizadas para fins acadêmicos. Você não será identificado(a) e seus dados serão armazenados e protegidos eletronicamente.<br><br>
-				3. Questões de segurança<br><br>Caso você sinta algum desconforto ou incômodo ao responder às perguntas, poderá interromper sua participação e seus dados não serão armazenados. Não existe qualquer custo associado à sua participação, assim como não receberá qualquer pagamento por fazer parte deste estudo.<br><br>
-				4. Seus direitos<br><br>Você tem o direito de solicitar informações adicionais sobre o projeto e/ou interromper sua participação na  pesquisa a qualquer momento. <br><br>
+			  <div class="modal-body" id="terms">
+				<p id="t1">Projeto: “Participação, engajamento, inclusão e diálogo em museus de ciências em países da América Latina e Caribe: ações, concepções e políticas públicas”</p>
+				<p id="t2">1. Sua participação</p>
+				<p id="t3">Você responderá algumas perguntas sobre o tema citado. Não há respostas certas ou erradas.</p>
+				<p id="t4">2. Suas informações</p>
+				<p id="t5">Suas respostas serão somente utilizadas para fins acadêmicos. Você não será identificado(a) e seus dados serão armazenados e protegidos eletronicamente.</p>
+				<p id="t6">3. Questões de segurança</p>
+				<p id="t7">Caso você sinta algum desconforto ou incômodo ao responder às perguntas, poderá interromper sua participação e seus dados não serão armazenados. Não existe qualquer custo associado à sua participação, assim como não receberá qualquer pagamento por fazer parte deste estudo.</p>
+				<p id="t8">4. Seus direitos</p>
+				<p id="t9">Você tem o direito de solicitar informações adicionais sobre o projeto e/ou interromper sua participação na  pesquisa a qualquer momento.</p>
 				<hr>
-				Caso você queira entrar em contato conosco para tirar dúvidas ou saber mais sobre a pesquisa,  envie um e-mail para pesquisamuseus@usp.br. <br><br>
-				Desde já, agradecemos a sua importante participação nesta pesquisa. <br><br>
-				Pesquisadoras(es) responsáveis: Alessandra Fernandes Bizerra (IB -USP), Ana Maria Navas Iannini (Simon Fraser University), Bianca Hipólito de Oliveira (IB-USP), Luisa Massarani (Fiocruz), Rafael Vitame Kauano (FE-USP).
+				<p id="t10">Caso você queira entrar em contato conosco para tirar dúvidas ou saber mais sobre a pesquisa, envie um e-mail para pesquisamuseus@usp.br.</p>
+				<p id="t11">Desde já, agradecemos a sua importante participação nesta pesquisa.</p>
+				<p id="t12">Pesquisadoras(es) responsáveis: Alessandra Fernandes Bizerra (IB -USP), Ana Maria Navas Iannini (Simon Fraser University), Bianca Hipólito de Oliveira (IB-USP), Luisa Massarani (Fiocruz), Rafael Vitame Kauano (FE-USP).</p>
 			  </div>
 			  <form id="quizform" class="modal-footer needs-validation" action=index.html  novalidate>
 			  <div class="col-12">
 		<div class="form-check">
 		  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-		  <label class="form-check-label" for="invalidCheck">
+		  <label id="confirm" class="form-check-label" for="invalidCheck">
 			Eu confirmo que li o termo de consentimento e concordo em participar desta pesquisa.
 		  </label>
-		  <div class="invalid-feedback">
+		  <div id="nconfirm" class="invalid-feedback">
 			Você precisa aceitar para continuar.
 		  </div>
 		</div>
 	  	</div>
-			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-			<button type="submit" class="btn btn-primary">Continuar</button>
+			<button id="fech" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+			<button id="cont" type="submit" class="btn btn-primary">Continuar</button>
 			  </form>
 		</div>
 	</div>
   
-
-
-  
-    
-
     <!-- Javascript - Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<script>
@@ -117,8 +116,31 @@
 			document.getElementById('p5').innerHTML='Este projeto segue as normas de ética em pesquisa estabelecidas pelo CEPE-IBUSP e está registrado com o número 61062222700005464 na Plataforma Brasil.';
 			document.getElementById('idioma').innerHTML='Cambia el idioma / Change the language:';
 			document.getElementById('prosseguir').innerHTML='Clique aqui para prosseguir e conhecer as informações sobre a segurança e a ética da sua participação nesta pesquisa:';
-			document.getElementById('tbotao').innerHTML='Prosseguir';
+			document.getElementById('tbotao').innerHTML='Continuar';
+
+			document.getElementById('exampleModalLabel').innerHTML='Termo de Consentimento Livre e Esclarecido';
+			document.getElementById('t1').innerHTML='Projeto: “Participação, engajamento, inclusão e diálogo em museus de ciências em países da América Latina e Caribe: ações, concepções e políticas públicas”';
+			document.getElementById('t2').innerHTML='1. Sua participação';
+			document.getElementById('t3').innerHTML='Você responderá algumas perguntas sobre o tema citado. Não há respostas certas ou erradas.';
+			document.getElementById('t4').innerHTML='2. Suas informações';
+			document.getElementById('t5').innerHTML='Suas respostas serão somente utilizadas para fins acadêmicos. Você não será identificado(a) e seus dados serão armazenados e protegidos eletronicamente.';
+			document.getElementById('t6').innerHTML='3. Questões de segurança';
+			document.getElementById('t7').innerHTML='Caso você sinta algum desconforto ou incômodo ao responder às perguntas, poderá interromper sua participação e seus dados não serão armazenados. Não existe qualquer custo associado à sua participação, assim como não receberá qualquer pagamento por fazer parte deste estudo.';
+			document.getElementById('t8').innerHTML='4. Seus direitos';
+			document.getElementById('t9').innerHTML='Você tem o direito de solicitar informações adicionais sobre o projeto e/ou interromper sua participação na  pesquisa a qualquer momento.';
+			
+			document.getElementById('t10').innerHTML='Caso você queira entrar em contato conosco para tirar dúvidas ou saber mais sobre a pesquisa, envie um e-mail para pesquisamuseus@usp.br.';
+			document.getElementById('t11').innerHTML='Desde já, agradecemos a sua importante participação nesta pesquisa.';
+			document.getElementById('t12').innerHTML='Pesquisadoras(es) responsáveis: Alessandra Fernandes Bizerra (IB -USP), Ana Maria Navas Iannini (Simon Fraser University), Bianca Hipólito de Oliveira (IB-USP), Luisa Massarani (Fiocruz), Rafael Vitame Kauano (FE-USP).';
+			
+			document.getElementById('confirm').innerHTML='Eu confirmo que li o termo de consentimento e concordo em participar desta pesquisa.';
+			document.getElementById('nconfirm').innerHTML='Você precisa aceitar para continuar.';
+
+			document.getElementById('fech').innerHTML='Fechar';
+			document.getElementById('cont').innerHTML='Continuar';
+
 			document.getElementById("quizform").action="index.html";
+
 			}
 		</script>
 		<script>
@@ -132,6 +154,27 @@
 			document.getElementById("idioma").innerHTML="Mude o idioma / Change the language:";
 			document.getElementById("prosseguir").innerHTML="Haga clic aquí para obtener información sobre protección de datos y cuestiones éticas relacionadas a su participación en este estudio:";
 			document.getElementById("tbotao").innerHTML="Continuar";
+			
+			document.getElementById('exampleModalLabel').innerHTML='Condiciones para el consentimiento libre e informado';
+			document.getElementById('t1').innerHTML='Proyecto: “Participación, engagement, inclusión y diálogo en los museos de ciencia de los países de Latino America y  el Caribe: acciones, conceptos y políticas públicas”';
+			document.getElementById('t2').innerHTML='1. Su participación';
+			document.getElementById('t3').innerHTML='Usted responderá a algunas preguntas sobre el tema mencionado. No hay respuestas correctas o incorrectas.';
+			document.getElementById('t4').innerHTML='2. Su información';
+			document.getElementById('t5').innerHTML='Sus respuestas sólo serán utilizadas para fines académicos. Usted no será identificado. Para este fin sus datos serán almacenados de forma anónima y protegidos electrónicamente.';
+			document.getElementById('t6').innerHTML='3. Cuestiones de seguridad';
+			document.getElementById('t7').innerHTML='Si siente alguna incomodidad al responder las preguntas, puede interrumpir su participación y sus datos no serán almacenados. No hay ningún costo asociado con su participación, ni recibirá ningún pago por participar en este estudio.';
+			document.getElementById('t8').innerHTML='4. Sus derechos';
+			document.getElementById('t9').innerHTML='Usted tiene derecho a solicitar información adicional sobre el proyecto y/o retirarse del mismo en cualquier momento.';
+			
+			document.getElementById('t10').innerHTML='Si desea ponerse en contacto con nosotros para hacer preguntas o saber más sobre la encuesta, por favor envíe un correo electrónico a pesquisamuseus@usp.br.';
+			document.getElementById('t11').innerHTML='Agradecemos de antemano su importante participación en este estudio.';
+			document.getElementById('t12').innerHTML='Investigadores responsables: Alessandra Fernandes Bizerra (IB-USP), Ana Maria Navas Iannini (Facultad de Educación - Universidad Simon Fraser), Bianca Hipólito de Oliveira (IB-USP), Luisa Massarani (Fiocruz), Rafael Vitame Kauano (FE-USP).';
+			
+			document.getElementById('confirm').innerHTML='Yo confirmo que leí las condiciones de consentimiento y acepto participar en esta investigación.';
+			document.getElementById('nconfirm').innerHTML='Debes aceptar para continuar.';
+
+			document.getElementById('fech').innerHTML='Cerrar';
+			document.getElementById('cont').innerHTML='Continuar';
 			
 			document.getElementById("quizform").action="www.google.com";
 			}
