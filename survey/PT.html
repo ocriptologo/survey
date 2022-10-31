@@ -663,7 +663,7 @@
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
                 <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return show('página5','página6');">Questão Anterior</button>             
-                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página6','página5');">Próxima Questão</button>
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página7','página6');">Próxima Questão</button>
               </div>
             </div>
           </div>
@@ -672,7 +672,131 @@
 
       </div>
     </div>
-    
+
+    <!-- Página 7 -->
+    <!-- Container principal da página -->
+    <div id="página7" class="container-fluid" style="display:none">
+      <div class="row">
+
+        <!-- Coluna Header (título / texto sobre a seção) -->
+        <div class="coluna-header header-2 col-md-6 col-sm-12 d-flex">
+          <div>Título da Seção</div>
+        </div>
+        
+        <!-- Coluna Questionário (perguntas + botão) -->
+        <div class="coluna-questionario col-sm-12 col-md-6 col-lg-6">
+
+          <!-- Container para as Perguntas -->
+          <div class="container px-4">
+            <div class="row gx-5">
+              <div class="coluna-perguntas col d-flex">
+
+                <div class="row d-flex justify-content-center">
+
+                  <!-- Pergunta 2 [Seção 2] -->
+                  <label for="identidade-genero" class="form-label">Qual a sua identidade de gênero?</label>
+
+                  <div id="identidade-genero" class="mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Feminina Cisgênero" id="fem-cis">
+                      <label class="form-check-label" for="fem-cis">
+                        Feminina Cisgênero
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Feminina Transgênero" id="fem-trans">
+                      <label class="form-check-label" for="fem-trans">
+                        Feminina Transgênero
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Masculino Cisgênero" id="mas-cis">
+                      <label class="form-check-label" for="mas-cis">
+                        Masculino Cisgênero
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Masculino Transgênero" id="mas-trans">
+                      <label class="form-check-label" for="mas-trans">
+                        Masculino Transgênero
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Pessoa travesti" id="travesti">
+                      <label class="form-check-label" for="travesti">
+                        Pessoa travesti
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Pessoa não-binária" id="nao-binaria">
+                      <label class="form-check-label" for="nao-binaria">
+                        Pessoa não-binária
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="nao-quero-responder">
+                      <label class="form-check-label" for="naoinformar3">
+                        Não quero responder
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Outro" id="outros">
+                      <label class="form-check-label" for="outro3">
+                        Outros
+                      </label>
+                    </div>
+
+                  </div>                  
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Container para o Botão -->
+          <div class="container px-4">
+            <div class="row gx-5">
+              <div class="coluna-botao col d-flex">
+                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return show('página6','página7');">Questão Anterior</button>             
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página7','página6');">Próxima Questão</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="Não sei" id="naosei2">
+        <label class="form-check-label" for="naosei2">
+          Não sei
+        </label>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="naoinformar2">
+        <label class="form-check-label" for="naoinformar2">
+          Prefiro não informar
+        </label>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="Outro" id="outro2">
+        <label class="form-check-label" for="outro2">
+          Outro
+        </label>
+    </div>
 
     <!-- Javascript - Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
