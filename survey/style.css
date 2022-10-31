@@ -1,9 +1,16 @@
 .coluna-header {
-    background-color:rgb(223, 96, 223); 
     height: 100vh; 
     min-height: 500px; 
     align-items: center; 
     justify-content: center;
+}
+
+.header-1 {
+    background-color:rgb(223, 96, 223); 
+}
+
+.header-2 {
+    background-color:rgb(96, 100, 223); 
 }
 
 .coluna-questionario {
