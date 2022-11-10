@@ -27,6 +27,7 @@
     min-height: 450px; 
     align-items: center; 
     justify-content: center;
+    margin-inline: 10%;
 }
 
 .coluna-botao {
