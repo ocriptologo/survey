@@ -1,0 +1,38 @@
+.coluna-header {
+    height: 100vh; 
+    min-height: 500px; 
+    align-items: center; 
+    justify-content: center;
+    padding: 5%;
+}
+
+.header-1 {
+    background-color:rgb(223, 96, 223); 
+}
+
+.header-2 {
+    background-color:rgb(96, 100, 223); 
+}
+
+.header-3 {
+    background-color:rgb(96, 219, 223); 
+}
+
+.coluna-questionario {
+    background-color:rgb(250, 246, 240);
+}
+
+.coluna-perguntas {
+    height: 90vh; 
+    min-height: 450px; 
+    align-items: center; 
+    justify-content: center;
+    margin-inline: 10%;
+}
+
+.coluna-botao {
+    justify-content: right;
+    align-items: center; 
+    height: 10vh; 
+    min-height: 50px; 
+}
