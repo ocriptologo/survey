@@ -16,4 +16,6 @@ function outros(x, y) {
     } else {
         text.style.display = "none";
     }
-  }
+}
+
+
