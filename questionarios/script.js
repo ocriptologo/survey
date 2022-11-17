@@ -4,11 +4,11 @@ function show(shown, hidden) {
   return false;
 }
 
-function o0() {
+function outros(x, y) {
     // Get the checkbox
-    var checkBox = document.getElementById("outro0");
+    var checkBox = document.getElementById(x);
     // Get the output text
-    var text = document.getElementById("iii");
+    var text = document.getElementById(y);
 
     // If the checkbox is checked, display the output text
     if (checkBox.checked == true){
