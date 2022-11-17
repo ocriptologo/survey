@@ -17,7 +17,6 @@ function isValid(current){
 	
 	var currentPage;
 	currentPage = document.getElementById(current);
-	alert("no");
 
 
   
@@ -33,12 +32,10 @@ function isValid(current){
 		}
 		}
 	}
-	alert("ah");
 	
 	var checkboxGroup, checkboxInputs, checked = 1;
 	checkboxGroup = currentPage.getElementsByClassName("form-group");
 	checkboxInputs = checkboxGroup[0].getElementsByClassName("form-check-input");
-	alert("woo");
 	if (checkboxInputs.length > 0){
 		checked = 0;
 		for (i = 0; i < checkboxInputs.length; i++) {
