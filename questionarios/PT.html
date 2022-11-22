@@ -1796,7 +1796,60 @@
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
                 <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página21','página22');">Questão Anterior</button>             
-                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página22','página21');">Próxima Questão</button>
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página23','página22');">Próxima Questão</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Página 23 -->
+    <!-- Container principal da página -->
+    <div id="página23" class="container-fluid" style="display:none">
+      <div class="row">
+
+        <!-- Coluna Header (título / texto sobre a seção) -->
+        <div class="coluna-header header-5 col-md-6 col-sm-12 d-flex">
+          <h1>Maravilha! Você chegou ao fim da pesquisa</h1>
+        </div>
+        
+        <!-- Coluna Questionário (perguntas + botão) -->
+        <div class="coluna-questionario col-sm-12 col-md-6 col-lg-6">
+
+          <!-- Container para as Perguntas -->
+          <div class="container px-4">
+            <div class="row gx-5">
+              <div class="coluna-perguntas col d-flex">
+
+                <div class="row">
+
+                  <!-- Perguntas Finais -->
+
+                  <div class="form-group mb-3">
+                    <label for="comentarios" class="form-label">Se quiser, no próximo campo, deixe um comentário ou uma sugestão:</label>
+                    <textarea class="form-control" id="comentarios" placeholder="Responda aqui" rows="3"></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="nome-email" class="form-label">Caso deseje conhecer os resultados deste estudo, deixe aqui seu nome e email:</label>
+                    <textarea class="form-control" id="nome-email" placeholder="Responda aqui" rows="2"></textarea>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Container para o Botão -->
+          <div class="container px-4">
+            <div class="row gx-5">
+              <div class="coluna-botao col d-flex">
+                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página22','página23');">Questão Anterior</button>             
+                <button type="button" class="btn btn-info" href="#" onclick="return show('página23','página22');">Finalizar e Enviar</button>
               </div>
             </div>
           </div>
