@@ -721,7 +721,7 @@
                   <div id="identidade-genero" class="form-group mb-3">
 
                     <div class="form-check">
-                      <input class="form-check-input" name="genero-radio" type="radio" value="Feminina Cisgênero" id="fem-cis">
+                      <input class="form-check-input" name="genero-radio" type="radio" value="Feminina Cisgênero" id="fem-cis" onclick="bloqueia_outros('fem-cis','outro4_input')">
                       <label class="form-check-label" for="fem-cis">
                         Feminina Cisgênero
                         <a href="#" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="right" title="Pessoa que se identifica com o gênero que foi atribuido no seu nascimento">
@@ -731,42 +731,42 @@
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" name="genero-radio" type="radio" value="Feminina Transgênero" id="fem-trans">
+                      <input class="form-check-input" name="genero-radio" type="radio" value="Feminina Transgênero" id="fem-trans" onclick="bloqueia_outros('fem-trans','outro4_input')">
                       <label class="form-check-label" for="fem-trans">
                         Feminina Transgênero
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" name="genero-radio" type="radio" value="Masculino Cisgênero" id="mas-cis">
+                      <input class="form-check-input" name="genero-radio" type="radio" value="Masculino Cisgênero" id="mas-cis" onclick="bloqueia_outros('mas-cis','outro4_input')">
                       <label class="form-check-label" for="mas-cis">
                         Masculino Cisgênero
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" name="genero-radio" type="radio" value="Masculino Transgênero" id="mas-trans">
+                      <input class="form-check-input" name="genero-radio" type="radio" value="Masculino Transgênero" id="mas-trans" onclick="bloqueia_outros('mas-trans','outro4_input')">
                       <label class="form-check-label" for="mas-trans">
                         Masculino Transgênero
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" name="genero-radio" type="radio" value="Pessoa travesti" id="travesti">
+                      <input class="form-check-input" name="genero-radio" type="radio" value="Pessoa travesti" id="travesti" onclick="bloqueia_outros('travesti','outro4_input')">
                       <label class="form-check-label" for="travesti">
                         Pessoa travesti
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" name="genero-radio" type="radio" value="Pessoa não-binária" id="nao-binaria">
+                      <input class="form-check-input" name="genero-radio" type="radio" value="Pessoa não-binária" id="nao-binaria" onclick="bloqueia_outros('nao-binaria','outro4_input')">
                       <label class="form-check-label" for="nao-binaria">
                         Pessoa não-binária
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" name="genero-radio" type="radio" value="" id="nao-quero-responder">
+                      <input class="form-check-input" name="genero-radio" type="radio" value="" id="nao-quero-responder" onclick="bloqueia_outros('nao-quero-responder','outro4_input')">
                       <label class="form-check-label" for="naoinformar3">
                         Não quero responder
                       </label>
@@ -837,28 +837,28 @@
                   <div id="deficiencia" class="form-group mb-3">
 
                     <div class="form-check">
-                      <input class="form-check-input" name="deficiencia-radio" type="radio" value="Sim" id="sim-d">
+                      <input class="form-check-input" name="deficiencia-radio" type="radio" value="Sim" id="sim-d" onclick="deficiencia('sim-d','defic_text','defic_input')">
                       <label class="form-check-label" for="sim-d">
                         Sim
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" name="deficiencia-radio" type="radio" value="Não" id="nao-d">
+                      <input class="form-check-input" name="deficiencia-radio" type="radio" value="Não" id="nao-d" onclick="bloqueia_deficiencia('nao-d','defic_text','defic_input')">
                       <label class="form-check-label" for="nao-d">
                         Não
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" name="deficiencia-radio" type="radio" value="Não sei" id="naosei4">
+                      <input class="form-check-input" name="deficiencia-radio" type="radio" value="Não sei" id="naosei4" onclick="bloqueia_deficiencia('naosei4','defic_text','defic_input')">
                       <label class="form-check-label" for="naosei4">
                         Não sei
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" name="deficiencia-radio" type="radio" value="Prefiro não informar" id="naoinformar4">
+                      <input class="form-check-input" name="deficiencia-radio" type="radio" value="Prefiro não informar" id="naoinformar4" onclick="bloqueia_deficiencia('naoinformar4','defic_text','defic_input')">
                       <label class="form-check-label" for="naoinformar4">
                         Prefiro não informar
                       </label>
@@ -867,9 +867,9 @@
                   </div>    
 
                   <!-- Pergunta 4b [Seção 2] -->
-                  <label for="qual-deficiencia" class="form-label">Em caso afirmativo, diga-nos, se quiser, qual é a sua deficiência?</label>
+                  <label for="qual-deficiencia" class="form-label" style="display:none" id="defic_text">Diga-nos, se quiser, qual é a sua deficiência?</label>
                   <div class="form-group mb-3">
-                    <input type="text" class="form-control form-control-md" id="qual-deficiencia" placeholder="Opcional">
+                    <input type="text" class="form-control form-control-md" id="defic_input" style="display:none" placeholder="Opcional">
                   </div>
 
                 </div>
@@ -920,42 +920,42 @@
 
                   <div id="formacao" class="form-group mb-3">
                     <div class="form-check">
-                      <input class="form-check-input" name="formacao-radio" type="radio" value="Ensino Fundamental" id="fundamental">
+                      <input class="form-check-input" name="formacao-radio" type="radio" value="Ensino Fundamental" id="fundamental" onclick="bloqueia_outros('fundamental','outro5_input')">
                       <label class="form-check-label" for="fundamental">
                         Ensino Fundamental
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" name="formacao-radio" type="radio" value="Ensino Médio" id="medio">
+                      <input class="form-check-input" name="formacao-radio" type="radio" value="Ensino Médio" id="medio" onclick="bloqueia_outros('medio','outro5_input')">
                       <label class="form-check-label" for="medio">
                         Ensino Médio
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" name="formacao-radio" type="radio" value="Graduação" id="graduacao">
+                      <input class="form-check-input" name="formacao-radio" type="radio" value="Graduação" id="graduacao" onclick="bloqueia_outros('graduacao','outro5_input')">
                       <label class="form-check-label" for="graduacao">
                         Graduação
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" name="formacao-radio" type="radio" value="Especialização" id="especializacao">
+                      <input class="form-check-input" name="formacao-radio" type="radio" value="Especialização" id="especializacao" onclick="bloqueia_outros('especializacao','outro5_input')">
                       <label class="form-check-label" for="especializacao">
                         Especialização
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" name="formacao-radio" type="radio" value="Pós-graduação" id="pos-graduacao">
+                      <input class="form-check-input" name="formacao-radio" type="radio" value="Pós-graduação" id="pos-graduacao" onclick="bloqueia_outros('pos-graduacao','outro5_input')">
                       <label class="form-check-label" for="pos-graduacao">
                         Pós-graduação
                       </label>
                     </div>
                     
                     <div class="form-check">
-                      <input class="form-check-input" name="formacao-radio" type="radio" value="Prefiro não responder" id="naoinformar5">
+                      <input class="form-check-input" name="formacao-radio" type="radio" value="Prefiro não responder" id="naoinformar5" onclick="bloqueia_outros('naoinformar5','outro5_input')">
                       <label class="form-check-label" for="naoinformar5">
                         Prefiro não responder
                       </label>
