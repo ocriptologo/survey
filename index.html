@@ -17,42 +17,52 @@
   	<body>
 
 		<!-- Elementos inciais -->
-		<div class="description container d-flex align-items-center">
+		<div class="description container">
 			
-			<div class="row mx-3">
+			<div class="conteudos row">
 
-				<div class="col-12 mb-2 mt-3">
-					<l1 id="idioma">Cambia el idioma / Change the language:</l1>
-				</div>
+				<div>
+					<div>
+						<div class="col-12 mb-2">
+							<l1 id="idioma">Cambia el idioma / Change the language:</l1>
+						</div>
+						<div class="col-12 mb-4">
+							<button type="button" class="btn btn-outline-dark m-2" onclick='changePT();'>Português</button>					
+							<button type="button" class="btn btn-outline-dark m-2" onclick='changeESP();'> Español </button>					
+							<button type="button" class="btn btn-outline-dark m-2"> English</button>
+						</div>
+					</div>
 
-				<div class="col-12 mb-4">
-					<button type="button" class="btn btn-outline-dark m-2" onclick='changePT();'>Português</button>					
-					<button type="button" class="btn btn-outline-dark m-2" onclick='changeESP();'> Español </button>					
-					<button type="button" class="btn btn-outline-dark m-2"> English</button>
-				</div>
+					<div>
+						<div class="col-12 mb-3 mt-4">
+							<h1 id="titletext">Públicos e transformação social: o que dizem os profissionais de museus de ciências da América Latina e Caribe?</h1>
+						</div>
 
-				<div class="col-12 mb-3">
-					<h1 id="titletext">Públicos e transformação social: o que dizem os profissionais de museus de ciências da América Latina e Caribe?</h1>
-				</div>
+						<div class="row">
+							<div class="col-md" style="text-align: justify;">
+								<p id="p1">Este estudo visa explorar as perspectivas de profissionais de museus de ciências envolvidos com a concepção, desenvolvimento e/ou implementação de ações educativas ou de divulgação científica sobre participação, engajamento, inclusão e diálogo em suas instituições.</p>
+								<p id="p2">Sua participação contribuirá para refletirmos sobre o desenvolvimento e fortalecimento das ações educativas e políticas públicas em museus de ciências relacionadas à transformação social.</p>
+							</div>
+		
+							<div class="col-md" style="text-align: justify;">
+								<p id="p3">Para participar desta pesquisa, basta responder a este questionário, que leva em média 20 minutos para ser preenchido.</p>
+								<p id="p4">Instituições proponentes: Universidade de São Paulo e Instituto Nacional de Comunicação Pública da Ciência e Tecnologia.</p>
+								<p id="p5">Este projeto segue as normas de ética em pesquisa estabelecidas pelo CEPE-IBUSP e está registrado com o número 61062222700005464 na Plataforma Brasil.</p>
+							</div>
+						</div>
+					</div>
 
-				<div class="col mx-4" style="text-align: justify;">
-					<p id="p1">Este estudo visa explorar as perspectivas de profissionais de museus de ciências envolvidos com a concepção, desenvolvimento e/ou implementação de ações educativas ou de divulgação científica sobre participação, engajamento, inclusão e diálogo em suas instituições.</p>
-					<p id="p2">Sua participação contribuirá para refletirmos sobre o desenvolvimento e fortalecimento das ações educativas e políticas públicas em museus de ciências relacionadas à transformação social.</p>
-				</div>
-
-				<div class="col mx-4" style="text-align: justify;">
-					<p id="p3">Para participar desta pesquisa, basta responder a este questionário, que leva em média 20 minutos para ser preenchido.</p>
-					<p id="p4">Instituições proponentes: Universidade de São Paulo e Instituto Nacional de Comunicação Pública da Ciência e Tecnologia.</p>
-					<p id="p5">Este projeto segue as normas de ética em pesquisa estabelecidas pelo CEPE-IBUSP e está registrado com o número 61062222700005464 na Plataforma Brasil.</p>
-				</div>
-
-				<div class="col-12 mb-3 mt-2">
-					<l1 id="prosseguir">Clique aqui para prosseguir e conhecer as informações <br> sobre a segurança e a ética da sua participação nesta pesquisa:</l1>
-				</div>
-
-				<div class="col mb-3">
-					<button id="tbotao" type="button" class="btn btn-outline-dark" 
-					data-bs-toggle="modal" data-bs-target="#exampleModal">Continuar</button>
+					<div>
+						<div class="col-12 mb-3 mt-4">
+							<l1 id="prosseguir">Clique aqui para prosseguir e conhecer as informações <br> sobre a segurança e a ética da sua participação nesta pesquisa:</l1>
+						</div>
+		
+						<div class="col">
+							<button id="tbotao" type="button" class="btn btn-outline-dark" 
+							data-bs-toggle="modal" data-bs-target="#exampleModal">Continuar</button>
+						</div>
+					</div>
+					
 				</div>
 
 			</div>
