@@ -17,34 +17,58 @@
   	<body>
 
 		<!-- Elementos inciais -->
-  		<div class="description">
-			<l1 id="idioma">Cambia el idioma / Change the language:</l1></p>
-			<button type="button" class="btn btn-outline-dark" style="margin-left: 0px;" onclick='changePT();'>Português</button>
-			<button type="button" class="btn btn-outline-dark" style="margin-left: 30px;" onclick='changeESP();'> Español </button>
-			<button type="button" class="btn btn-outline-dark" style="margin-left: 30px;" > English</button>
-			<p></p>
-			<p></p>
-			<h1 id="titletext">Públicos e transformação social: o que dizem os profissionais de museus de ciências da América Latina e Caribe?</h1>
-			<p id="p1">Este estudo visa explorar as perspectivas de profissionais de museus de ciências envolvidos com a concepção, desenvolvimento e/ou implementação de ações educativas ou de divulgação científica sobre participação, engajamento, inclusão e diálogo em suas instituições.</p>
-			<p id="p2">Sua participação contribuirá para refletirmos sobre o desenvolvimento e fortalecimento das ações educativas e políticas públicas em museus de ciências relacionadas à transformação social.</p>
-			<p id="p3">Para participar desta pesquisa, basta responder a este questionário, que leva em média 20 minutos para ser preenchido.</p>
-			<p id="p4">Instituições proponentes: Universidade de São Paulo e Instituto Nacional de Comunicação Pública da Ciência e Tecnologia.</p>
-			<p id="p5">Este projeto segue as normas de ética em pesquisa estabelecidas pelo CEPE-IBUSP e está registrado com o número 61062222700005464 na Plataforma Brasil.</p>
-			</p>
-			<p></p><p><l1 id="prosseguir">Clique aqui para prosseguir e conhecer as informações sobre a segurança e a ética da sua participação nesta pesquisa:</l1></p>
-			<p><button id="tbotao" type="button" class="btn btn-outline-dark" style="margin:10px;" 
-			data-bs-toggle="modal" data-bs-target="#exampleModal">Continuar</button></p><p></p><p></p>
-		</div>
+		<div class="description container d-flex align-items-center">
+			
+			<div class="row mx-3">
 
+				<div class="col-12 mb-2 mt-3">
+					<l1 id="idioma">Cambia el idioma / Change the language:</l1>
+				</div>
+
+				<div class="col-12 mb-4">
+					<button type="button" class="btn btn-outline-dark m-2" onclick='changePT();'>Português</button>					
+					<button type="button" class="btn btn-outline-dark m-2" onclick='changeESP();'> Español </button>					
+					<button type="button" class="btn btn-outline-dark m-2"> English</button>
+				</div>
+
+				<div class="col-12 mb-3">
+					<h1 id="titletext">Públicos e transformação social: o que dizem os profissionais de museus de ciências da América Latina e Caribe?</h1>
+				</div>
+
+				<div class="col mx-4" style="text-align: justify;">
+					<p id="p1">Este estudo visa explorar as perspectivas de profissionais de museus de ciências envolvidos com a concepção, desenvolvimento e/ou implementação de ações educativas ou de divulgação científica sobre participação, engajamento, inclusão e diálogo em suas instituições.</p>
+					<p id="p2">Sua participação contribuirá para refletirmos sobre o desenvolvimento e fortalecimento das ações educativas e políticas públicas em museus de ciências relacionadas à transformação social.</p>
+				</div>
+
+				<div class="col mx-4" style="text-align: justify;">
+					<p id="p3">Para participar desta pesquisa, basta responder a este questionário, que leva em média 20 minutos para ser preenchido.</p>
+					<p id="p4">Instituições proponentes: Universidade de São Paulo e Instituto Nacional de Comunicação Pública da Ciência e Tecnologia.</p>
+					<p id="p5">Este projeto segue as normas de ética em pesquisa estabelecidas pelo CEPE-IBUSP e está registrado com o número 61062222700005464 na Plataforma Brasil.</p>
+				</div>
+
+				<div class="col-12 mb-3 mt-2">
+					<l1 id="prosseguir">Clique aqui para prosseguir e conhecer as informações <br> sobre a segurança e a ética da sua participação nesta pesquisa:</l1>
+				</div>
+
+				<div class="col mb-3">
+					<button id="tbotao" type="button" class="btn btn-outline-dark" 
+					data-bs-toggle="modal" data-bs-target="#exampleModal">Continuar</button>
+				</div>
+
+			</div>
+		
+		</div>
+		
+		
 		<!-- Modal -->
 		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-scrollable">
 				<div class="modal-content">
-			  		<div class="modal-header">
+					<div class="modal-header">
 						<h5 class="modal-title" id="exampleModalLabel">Termo de Consentimento Livre e Esclarecido</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			  		</div>
-			  		<div class="modal-body" id="terms">
+					</div>
+					<div class="modal-body" id="terms">
 						<p id="t1">Projeto: “Participação, engajamento, inclusão e diálogo em museus de ciências em países da América Latina e Caribe: ações, concepções e políticas públicas”</p>
 						<p id="t2">1. Sua participação</p>
 						<p id="t3">Você responderá algumas perguntas sobre o tema citado. Não há respostas certas ou erradas.</p>
@@ -58,22 +82,22 @@
 						<p id="t10">Caso você queira entrar em contato conosco para tirar dúvidas ou saber mais sobre a pesquisa, envie um e-mail para pesquisamuseus@usp.br.</p>
 						<p id="t11">Desde já, agradecemos a sua importante participação nesta pesquisa.</p>
 						<p id="t12">Pesquisadoras(es) responsáveis: Alessandra Fernandes Bizerra (IB -USP), Ana Maria Navas Iannini (Simon Fraser University), Bianca Hipólito de Oliveira (IB-USP), Luisa Massarani (Fiocruz), Rafael Vitame Kauano (FE-USP).</p>
-			  		</div>
-			  		<form id="quizform" class="modal-footer needs-validation" action=questionarios/PT.html  novalidate>
-			  			<div class="col-12">
+					</div>
+					<form id="quizform" class="modal-footer needs-validation" action=questionarios/PT.html  novalidate>
+						<div class="col-12">
 							<div class="form-check">
-		  						<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-		  							<label id="confirm" class="form-check-label" for="invalidCheck">
+								<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+								<label id="confirm" class="form-check-label" for="invalidCheck">
 									Eu confirmo que li o termo de consentimento e concordo em participar desta pesquisa.
-		  							</label>
-		  							<div id="nconfirm" class="invalid-feedback">
+								</label>
+								<div id="nconfirm" class="invalid-feedback">
 									Você precisa aceitar para continuar.
-		  							</div>
+								</div>
 							</div>
-	  					</div>
+						</div>
 						<button id="fech" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
 						<button id="cont" type="submit" class="btn btn-primary">Continuar</button>
-			  		</form>
+					</form>
 				</div>
 			</div>
 		
@@ -103,14 +127,14 @@
 		<!-- Muda para PT -->
 		<script>
 			function changePT(){
-				document.getElementById('titletext').innerHTML='Públicos 	e transformação social: o que dizem os profissionais de museus de ciências da América Latina e Caribe?';
+				document.getElementById('titletext').innerHTML='Públicos e transformação social: o que dizem os profissionais de museus de ciências da América Latina e Caribe?';
 				document.getElementById('p1').innerHTML='Este estudo visa explorar as perspectivas de profissionais de museus de ciências envolvidos com a concepção, desenvolvimento e/ou implementação de ações educativas ou de divulgação científica sobre participação, engajamento, inclusão e diálogo em suas instituições.';
 				document.getElementById('p2').innerHTML='Sua participação contribuirá para refletirmos sobre o desenvolvimento e fortalecimento das ações educativas e políticas públicas em museus de ciências relacionadas à transformação social.';
 				document.getElementById('p3').innerHTML='Para participar desta pesquisa, basta responder a este questionário, que leva em média 20 minutos para ser preenchido.';
 				document.getElementById('p4').innerHTML='Instituições proponentes: Universidade de São Paulo e Instituto Nacional de Comunicação Pública da Ciência e Tecnologia.';
 				document.getElementById('p5').innerHTML='Este projeto segue as normas de ética em pesquisa estabelecidas pelo CEPE-IBUSP e está registrado com o número 61062222700005464 na Plataforma Brasil.';
 				document.getElementById('idioma').innerHTML='Cambia el idioma / Change the language:';
-				document.getElementById('prosseguir').innerHTML='Clique aqui para prosseguir e conhecer as informações sobre a segurança e a ética da sua participação nesta pesquisa:';
+				document.getElementById('prosseguir').innerHTML='Clique aqui para prosseguir e conhecer as informações <br> sobre a segurança e a ética da sua participação nesta pesquisa:';
 				document.getElementById('tbotao').innerHTML='Continuar';
 
 				document.getElementById('exampleModalLabel').innerHTML='Termo de Consentimento Livre e Esclarecido';
@@ -149,7 +173,7 @@
 				document.getElementById("p4").innerHTML="Instituciones proponentes: Universidad de São Paulo e Instituto Nacional de Comunicación Pública de Ciencia y Tecnología - Brazil.";
 				document.getElementById("p5").innerHTML="Este proyecto sigue los estándares de ética en investigación establecidos por CEPE-IBUSP y está registrado con el número 61062222700005464 en Plataforma Brasil.";
 				document.getElementById("idioma").innerHTML="Mude o idioma / Change the language:";
-				document.getElementById("prosseguir").innerHTML="Haga clic aquí para obtener información sobre protección de datos y cuestiones éticas relacionadas a su participación en este estudio:";
+				document.getElementById("prosseguir").innerHTML="Haga clic aquí para obtener información sobre protección de datos y <br> cuestiones éticas relacionadas a su participación en este estudio:";
 				document.getElementById("tbotao").innerHTML="Continuar";
 			
 				document.getElementById('exampleModalLabel').innerHTML='Condiciones para el consentimiento libre e informado';
