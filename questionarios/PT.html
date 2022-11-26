@@ -1265,12 +1265,12 @@
                     <label for="acao-transformacao" class="form-label">Existe no museu em que você trabalha alguma ação ou projeto que visa a transformação social?</label>
 
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="acao-transformacao-radio" id="sim-tranformacao" value="Sim" name="ExisteAcao">
+                      <input class="form-check-input" type="radio" name="acao-transformacao-radio" onclick="choice='página14', endOfPath='página17';" id="sim-tranformacao" value="Sim" name="ExisteAcao">
                       <label class="form-check-label" for="sim-tranformacao">Sim</label>
                     </div>
 
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="acao-transformacao-radio" id="nao-transformacao" value="Não" name="ExisteAcao">
+                      <input class="form-check-input" type="radio" name="acao-transformacao-radio" onclick="choice='página15', endOfPath='página15';" id="nao-transformacao" value="Não" name="ExisteAcao">
                       <label class="form-check-label" for="nao-transformacao">Não</label>
                     </div>
                       
@@ -1287,7 +1287,7 @@
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
                 <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página12','página13');">Questão Anterior</button>             
-                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página14','página13');">Próxima Questão</button>
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show(choice,'página13');">Próxima Questão</button>
               </div>
             </div>
           </div>
@@ -1334,7 +1334,7 @@
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
                 <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página13','página14');">Questão Anterior</button>             
-                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página15','página14');">Próxima Questão</button>
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página16','página14');">Próxima Questão</button>
               </div>
             </div>
           </div>
@@ -1380,8 +1380,8 @@
           <div class="container px-4">
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
-                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página14','página15');">Questão Anterior</button>             
-                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página16','página15');">Próxima Questão</button>
+                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página13','página15');">Questão Anterior</button>             
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página18','página15');">Próxima Questão</button>
               </div>
             </div>
           </div>
@@ -1427,7 +1427,7 @@
           <div class="container px-4">
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
-                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página15','página16');">Questão Anterior</button>             
+                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página14','página16');">Questão Anterior</button>             
                 <button type="button" class="btn btn-secondary" href="#" onclick="return show('página17','página16');">Próxima Questão</button>
               </div>
             </div>
@@ -1485,58 +1485,11 @@
       </div>
     </div>
 
+    <!----------------------------- SEÇÃO 4 ---------------------------------->
+
     <!-- Página 18 -->
     <!-- Container principal da página -->
     <div id="página18" class="container-fluid" style="display:none">
-      <div class="row">
-
-        <!-- Coluna Header (título / texto sobre a seção) -->
-        <div class="coluna-header header-3 col-md-6 col-sm-12 d-flex">
-          <h1>Nesta seção buscamos compreender suas concepções a respeito das relações entre museu e sociedade</h1>
-        </div>
-        
-        <!-- Coluna Questionário (perguntas + botão) -->
-        <div class="coluna-questionario col-sm-12 col-md-6 col-lg-6">
-
-          <!-- Container para as Perguntas -->
-          <div class="container px-4">
-            <div class="row gx-5">
-              <div class="coluna-perguntas col d-flex">
-
-                <div class="row">
-
-                  <!-- Pergunta 4b [Seção 3] -->
-                  <div class="form-group">
-                    <label for="obstaculos-acao" class="form-label">Em caso negativo, quais são os obstáculos e modificações necessárias para que o museu em que você trabalha promova transformação social por meio de suas ações e projetos?</label>
-                    <textarea class="form-control" id="obstaculos-acao" placeholder="Responda aqui" rows="5" name="Modificacoes"></textarea>
-                  </div>
-
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- Container para o Botão -->
-          <div class="container px-4">
-            <div class="row gx-5">
-              <div class="coluna-botao col d-flex">
-                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página17','página18');">Questão Anterior</button>             
-                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página19','página18');">Próxima Questão</button>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-    <!----------------------------- SEÇÃO 4 ---------------------------------->
-
-    <!-- Página 19 -->
-    <!-- Container principal da página -->
-    <div id="página19" class="container-fluid" style="display:none">
       <div class="row">
 
         <!-- Coluna Header (título / texto sobre a seção) -->
@@ -1591,8 +1544,8 @@
           <div class="container px-4">
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
-                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página18','página19');">Questão Anterior</button>             
-                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página20','página19');">Próxima Questão</button>
+                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp(endOfPath,'página18');">Questão Anterior</button>             
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página19','página18');">Próxima Questão</button>
               </div>
             </div>
           </div>
@@ -1602,9 +1555,9 @@
       </div>
     </div>
 
-    <!-- Página 20 -->
+    <!-- Página 19 -->
     <!-- Container principal da página -->
-    <div id="página20" class="container-fluid" style="display:none">
+    <div id="página19" class="container-fluid" style="display:none">
       <div class="row">
 
         <!-- Coluna Header (título / texto sobre a seção) -->
@@ -1659,8 +1612,8 @@
           <div class="container px-4">
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
-                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página19','página20');">Questão Anterior</button>             
-                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página21','página20');">Próxima Questão</button>
+                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página18','página19');">Questão Anterior</button>             
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página20','página19');">Próxima Questão</button>
               </div>
             </div>
           </div>
@@ -1670,9 +1623,9 @@
       </div>
     </div>
 
-    <!-- Página 21 -->
+    <!-- Página 20 -->
     <!-- Container principal da página -->
-    <div id="página21" class="container-fluid" style="display:none">
+    <div id="página20" class="container-fluid" style="display:none">
       <div class="row">
 
         <!-- Coluna Header (título / texto sobre a seção) -->
@@ -1727,8 +1680,8 @@
           <div class="container px-4">
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
-                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página20','página21');">Questão Anterior</button>             
-                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página22','página21');">Próxima Questão</button>
+                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página19','página20');">Questão Anterior</button>             
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página21','página20');">Próxima Questão</button>
               </div>
             </div>
           </div>
@@ -1738,9 +1691,9 @@
       </div>
     </div>
 
-    <!-- Página 22 -->
+    <!-- Página 21 -->
     <!-- Container principal da página -->
-    <div id="página22" class="container-fluid" style="display:none">
+    <div id="página21" class="container-fluid" style="display:none">
       <div class="row">
 
         <!-- Coluna Header (título / texto sobre a seção) -->
@@ -1795,8 +1748,8 @@
           <div class="container px-4">
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
-                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página21','página22');">Questão Anterior</button>             
-                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página23','página22');">Próxima Questão</button>
+                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página20','página21');">Questão Anterior</button>             
+                <button type="button" class="btn btn-secondary" href="#" onclick="return show('página22','página21');">Próxima Questão</button>
               </div>
             </div>
           </div>
@@ -1806,9 +1759,9 @@
       </div>
     </div>
 
-    <!-- Página 23 -->
+    <!-- Página 22 -->
     <!-- Container principal da página -->
-    <div id="página23" class="container-fluid" style="display:none">
+    <div id="página22" class="container-fluid" style="display:none">
       <div class="row">
 
         <!-- Coluna Header (título / texto sobre a seção) -->
@@ -1848,7 +1801,7 @@
           <div class="container px-4">
             <div class="row gx-5">
               <div class="coluna-botao col d-flex">
-                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página22','página23');">Questão Anterior</button>             
+                <button type="button" class="btn btn-secondary" style="margin:5px;" href="#" onclick="return showp('página21','página22');">Questão Anterior</button>             
                 <button type="submit" class="btn btn-secondary" href="#";">Finalizar e Enviar</button>
               </div>
             </div>
