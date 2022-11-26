@@ -1874,11 +1874,20 @@
         e.preventDefault()
     
         const responseBody = new FormData(form)
-        const TrendBody = responseBody.getAll("Cargo").join(", ")
-        responseBody.set('Cargo', TrendBody)
+        const t1 = responseBody.getAll("Cargo").join(", ")
+        responseBody.set('Cargo', t1)
+        const t2 = responseBody.getAll("RelacaoTrabalho").join(", ")
+        responseBody.set('RelacaoTrabalho', t2)
+        const t3 = responseBody.getAll("Trabalha").join(", ")
+        responseBody.set('Trabalha', t3)
+        const t4 = responseBody.getAll("Publicos").join(", ")
+        responseBody.set('Publicos', t4)
+        const t5 = responseBody.getAll("Area").join(", ")
+        responseBody.set('Area', t5)
+       
         fetch(scriptURL, { method: 'POST', body: responseBody })
-          .then(response => { alert('Success!', response) })
-          .catch(error => alert('Error!', error.message))
+          .then(response => { alert('Successo, sua resposta foi registrada!', response) })
+          .catch(error => alert('Erro, por favor, tente novamente!', error.message))
       })
     </script>
 
