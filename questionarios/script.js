@@ -135,3 +135,9 @@ function bloqueia_deficiencia(x, y, z) {
 		text1.style.display = "block";
     }
 }
+
+function setvalue(radioid, inputid){
+	const text_input = document.getElementById(inputid).value;
+	document.getElementById(radioid).setAttribute('value', text_input);
+
+}
