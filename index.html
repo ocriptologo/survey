@@ -28,8 +28,8 @@
 						</div>
 						<div class="col-12 mb-4">
 							<button type="button" class="btn btn-outline-dark m-2" onclick='changePT();'>Português</button>					
-							<button type="button" class="btn btn-outline-dark m-2" onclick='changeESP();'> Español </button>					
-							<button type="button" class="btn btn-outline-dark m-2"> English</button>
+							<button type="button" class="btn btn-outline-dark m-2" onclick='changeESP();'>Español</button>					
+							<button type="button" class="btn btn-outline-dark m-2" onclick='changeENG();'>English</button>
 						</div>
 					</div>
 
@@ -213,6 +213,45 @@
 				document.getElementById('cont').innerHTML='Continuar';
 			
 				document.getElementById("quizform").action="questionarios/ESP.html";
+			}
+		</script>
+
+		<!-- Muda para ENG -->
+		<script>
+			function changeENG(){
+				document.getElementById("titletext").innerHTML=" Publics and social transformation: what do science museum professionals in Latin America and the Caribbean say?";
+				document.getElementById("p1").innerHTML="This study aims to explore the perspectives of science museum professionals (in their different typologies) involved in the conception, development and/or implementation of educational or science communication actions that stimulate participation, engagement, inclusion and dialogue in their institutions.";
+				document.getElementById("p2").innerHTML="Science museums are broadly covered in this study, including natural history museums, technology museums, anthropology museums, archaeology museums, ethnography museums, history museums, interactive centers, botanical gardens, aquariums, planetariums, zoos, environmental education centers, ecological parks and others.";
+				document.getElementById("p3").innerHTML="Your participation will help us reflect on the development and strengthening of educational actions and public policies in science museums related to social transformation.";
+				document.getElementById("p4").innerHTML="To participate, we ask you to answer the questions in this questionnaire, which will take an average of 20 minutes to complete.";
+				document.getElementById("p5").innerHTML="Host institutions: University of São Paulo and National Institute of Public Communication of Science and Technology - Brazil.";
+				document.getElementById("p6").innerHTML="This project follows the research ethics standards established by CONEP and is registered with the number 61062222700005464 at the CEP-IBUSP.";
+				document.getElementById("idioma").innerHTML="Mude o idioma / Cambia el idioma:";
+				document.getElementById("prosseguir").innerHTML="Click here for information on data protection and ethical issues related to your participation in this study.";
+				document.getElementById("tbotao").innerHTML="Continue";
+			
+				document.getElementById('exampleModalLabel').innerHTML='Conditions for free and informed consent';
+				document.getElementById('t1').innerHTML='Project: "Participation, engagement, inclusion and dialogue in science museums in Latin American and Caribbean: actions, concepts and public policies"';
+				document.getElementById('t2').innerHTML='1. Your participation';
+				document.getElementById('t3').innerHTML='You will answer some questions on the topic mentioned. There are no correct or incorrect answers.';
+				document.getElementById('t4').innerHTML='2. Your information';
+				document.getElementById('t5').innerHTML='Your responses will only be used for academic purposes. You will not be identified. For this purpose, your data will be stored anonymously and protected electronically.';
+				document.getElementById('t6').innerHTML='3. Security issues';
+				document.getElementById('t7').innerHTML='If you feel uncomfortable answering the questions, you can stop your participation, and we will not store your data. There is no cost associated with your participation, nor will you receive any payment for participating in this study.';
+				document.getElementById('t8').innerHTML='4. Your rights';
+				document.getElementById('t9').innerHTML='You have the right to request additional information about the project and/or withdraw from it at any time.';
+			
+				document.getElementById('t10').innerHTML='If you wish to contact us to ask questions or learn more about the survey, please email pesquisamuseus@usp.br.';
+				document.getElementById('t11').innerHTML='We thank you in advance for your important participation in this study.';
+				document.getElementById('t12').innerHTML='Responsible researchers: Alessandra Fernandes Bizerra (IB-USP), Ana Maria Navas Iannini (Faculty of Education - Simon Fraser University), Bianca Hipólito de Oliveira (IB-USP), Luisa Massarani (Fiocruz), Rafael Vitame Kauano (FE-USP).';
+			
+				document.getElementById('confirm').innerHTML='I confirm that I have read the consent conditions and agree to participate in this research.';
+				document.getElementById('nconfirm').innerHTML='You must accept to continue.';
+
+				document.getElementById('fech').innerHTML='Close';
+				document.getElementById('cont').innerHTML='Continue';
+			
+				document.getElementById("quizform").action="questionarios/ENG.html";
 			}
 		</script>
   </body>
