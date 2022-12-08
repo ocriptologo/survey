@@ -1,20 +1,14 @@
 body {
-    background-color:rgb(184, 238, 192);
-}
-
-
-.description h1 {
-	color: #1a1714;
+    color:#162746;
+	background-color: #FACA35;
 }
 
 .description p {
-	color: #000000;
 	font-size: 1.1rem;
 	line-height: 1.5;
 }
 
 .description l1 {
-	color: #1a1714;
 	font-size: 1.4rem;
 }
 
