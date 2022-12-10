@@ -8,6 +8,7 @@
 }
 
 .header-1 {
+    background: center / contain no-repeat url("../imagens/24.svg");
     background-color: #162746;
     color:  #FACA35;
 }
