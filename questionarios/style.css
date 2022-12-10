@@ -49,3 +49,9 @@
     height: 10vh; 
     min-height: 50px; 
 }
+
+.btn-questionario {
+    background-color: #162746;
+    border-color: #162746;
+    color: #FACA35;
+}
