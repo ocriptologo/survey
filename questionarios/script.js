@@ -10,7 +10,12 @@ function show(shown, hidden) {
     document.getElementById(hidden).style.display='none';
 	}
 	else{
-	alert("Por favor responda todas as perguntas.");
+		if(document.getElementById("language").innerHTML=="PT")
+			alert("Por favor responda todas as perguntas.");
+		else if(document.getElementById("language").innerHTML=="ESP")
+			alert("Por favor responda todas las preguntas.");
+		else
+			alert("Please answer all the questions.");
 	}
   return false;
 }
