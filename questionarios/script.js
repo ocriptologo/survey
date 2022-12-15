@@ -5,10 +5,10 @@ function showp(shown, hidden) {
 }
 
 function show(shown, hidden) {
-	//if(isValid(hidden)){
+	if(isValid(hidden)){
     document.getElementById(shown).style.display='block';
     document.getElementById(hidden).style.display='none';
-	//}
+	}
   return false;
 }
 
