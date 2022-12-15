@@ -9,6 +9,9 @@ function show(shown, hidden) {
     document.getElementById(shown).style.display='block';
     document.getElementById(hidden).style.display='none';
 	}
+	else{
+	alert("Por favor responda todas as perguntas.");
+	}
   return false;
 }
 
@@ -28,7 +31,7 @@ function isValid(current){
 		for (i = 0; i < textInputs.length; i++) {
 		// If a field is empty...
 		if ((textInputs[i].value == "") && textInputs[i].style.display!='none') {
-			alert("textfalse");
+			
 		valid = false;
 		}
 		}
@@ -41,7 +44,7 @@ function isValid(current){
 		for (i = 0; i < selectInputs.length; i++) {
 		// If a field is empty...
 		if (selectInputs[i].value == "") {
-			alert("selectfalse");
+			
 		valid = false;
 		}
 		}
@@ -61,7 +64,7 @@ function isValid(current){
 		}
 		}
 		if (checked == 0){
-			alert("checkboxfalse");
+			
 			valid = false;
 		}
 		
