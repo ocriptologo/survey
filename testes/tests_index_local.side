@@ -1,0 +1,800 @@
+{
+  "id": "d50b5d53-22f2-486d-ab79-e1d83b1a9102",
+  "version": "2.0",
+  "name": "testes",
+  "url": "adicione aqui o caminho de arquivo para index.hmtl",
+  "tests": [{
+    "id": "6041292f-baac-4d90-82b1-1af2b81c5c1e",
+    "name": "test: Muda PT/ESP",
+    "commands": [{
+      "id": "d7ef833f-b3f8-4f9f-83e3-20d5b5790590",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eda1cbde-e26c-46c6-8941-e18cb4d02c7a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bacf111-6f52-44a8-847b-e77daf803782",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(2)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Español')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "516ee03e-04dd-4706-b017-62094a651f9c",
+    "name": "test: Muda ESP/PT",
+    "commands": [{
+      "id": "700aa417-4726-4c2f-ac62-09465eae50e2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2eb9ab29-4a79-4d5f-bc29-36bb6fe7f3d2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "027087d8-9e14-4408-9fd8-d7660e81c0e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(2)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Español')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7572f46f-db4f-4067-b3fa-cce0fedac781",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(1)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Português')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ee895570-9a23-4269-a13a-968b07b205dc",
+    "name": "test: Muda PT/ENG",
+    "commands": [{
+      "id": "41763388-3700-4580-804b-24dbe20a1005",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cee9ab71-7894-4e34-a706-b8516c15bac8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1d8b5ec-6ba0-4658-a856-8e0ab0394746",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "100791bd-4ff0-406c-89a1-8c0c3a3fe61b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(3)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d8d6861d-c6dd-4192-a33a-2087e95cd423",
+    "name": "test: Muda ENG/PT",
+    "commands": [{
+      "id": "e71d4115-cdf1-4bc5-a828-597f145834b1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ceba257f-972b-43bb-8abc-938a06618548",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba16a59e-102c-4ff6-9cdc-33777599b0ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(3)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b8200fa-b20e-4569-9a7b-e680de8e8dd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(1)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Português')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "04856ec9-9dc6-40e9-9d76-93c57b38c42c",
+    "name": "test: Muda ESP/ENG",
+    "commands": [{
+      "id": "f582dd86-43a9-4218-b7d1-782d81747661",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f0ece5b-74f3-48a1-aa0a-c211d7625049",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b82af3a1-cdc4-4c72-9192-5691755c1548",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(2)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Español')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "730e202f-80db-48d0-97a3-7d59ffec9ad5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(3)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bfe2f8e4-561f-4d91-82c6-874bceb4d6a4",
+    "name": "test: Muda ENG/ESP",
+    "commands": [{
+      "id": "86dc3e3f-3cdd-4e34-aafd-691e9f83c239",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8cc8179c-aa79-4e95-9092-832b79fb4aae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bb26ae9-d5d0-4ef2-8e6a-6d6b9b3d9fba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(3)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "437ae17f-1d58-4594-a119-5f24b31e1b21",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(2)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Español')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "18c85d31-d95c-4db0-9361-bfd767d46d17",
+    "name": "test: Não aceita termo PT ",
+    "commands": [{
+      "id": "d82d4855-28a5-4fca-b685-2f10cc8e33c6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9caa7290-dddb-4434-abdb-6806768286f0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7506d66e-6b2b-49a3-89c6-ee712d055485",
+      "comment": "",
+      "command": "click",
+      "target": "id=tbotao",
+      "targets": [
+        ["id=tbotao", "id"],
+        ["css=#tbotao", "css:finder"],
+        ["xpath=//button[@id='tbotao']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90130b77-f0e7-490b-98aa-cc1563740672",
+      "comment": "",
+      "command": "click",
+      "target": "id=cont",
+      "targets": [
+        ["id=cont", "id"],
+        ["css=#cont", "css:finder"],
+        ["xpath=//button[@id='cont']", "xpath:attributes"],
+        ["xpath=//form[@id='quizform']/button[2]", "xpath:idRelative"],
+        ["xpath=//form/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecb7248c-1d52-491e-acdf-f53f08d4653a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-close",
+      "targets": [
+        ["css=.btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='exampleModal']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "792be46c-b0b1-453e-8172-f11c2aa4e41a",
+    "name": "test: Não aceita termo ESP",
+    "commands": [{
+      "id": "61a68881-c458-49fb-b0e7-22c94b4a0731",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee34bbae-70cd-4429-99a1-4b84b7361340",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ec94034-8d89-4179-9afa-30e4a60fcdfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(2)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Español')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d3fc3b5-8f70-447d-818a-c71049f56f18",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=tbotao",
+      "targets": [
+        ["id=tbotao", "id"],
+        ["css=#tbotao", "css:finder"],
+        ["xpath=//button[@id='tbotao']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a5dcf05-8c3d-4850-b008-3621cd7b330a",
+      "comment": "",
+      "command": "click",
+      "target": "id=tbotao",
+      "targets": [
+        ["id=tbotao", "id"],
+        ["css=#tbotao", "css:finder"],
+        ["xpath=//button[@id='tbotao']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f72729f7-2c03-460f-8f4c-c03dda003c90",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=tbotao",
+      "targets": [
+        ["id=tbotao", "id"],
+        ["css=#tbotao", "css:finder"],
+        ["xpath=//button[@id='tbotao']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd7f4762-9337-4ede-a1b7-9a4fabc8094f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cont",
+      "targets": [
+        ["id=cont", "id"],
+        ["css=#cont", "css:finder"],
+        ["xpath=//button[@id='cont']", "xpath:attributes"],
+        ["xpath=//form[@id='quizform']/button[2]", "xpath:idRelative"],
+        ["xpath=//form/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e7034c7-4b9a-4e93-85fe-895472a536c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-close",
+      "targets": [
+        ["css=.btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='exampleModal']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e2f49e93-0dcb-4860-bdff-bc38dd8f1369",
+    "name": "test: Não aceita termo ENG",
+    "commands": [{
+      "id": "07e6aa79-1b06-455e-9f34-59826deeabc8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf1e8e75-8705-4ae7-bc52-58ae53c83f16",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8392553-0c75-4117-bab5-ba04493c1bfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(3)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16874238-228b-47fc-83ac-6576085ba3a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=tbotao",
+      "targets": [
+        ["id=tbotao", "id"],
+        ["css=#tbotao", "css:finder"],
+        ["xpath=//button[@id='tbotao']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e126d3f-bea2-4fc1-adba-a6357f61a1e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=cont",
+      "targets": [
+        ["id=cont", "id"],
+        ["css=#cont", "css:finder"],
+        ["xpath=//button[@id='cont']", "xpath:attributes"],
+        ["xpath=//form[@id='quizform']/button[2]", "xpath:idRelative"],
+        ["xpath=//form/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67e0cc9d-8417-4f1a-b868-a82fff3abf1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-close",
+      "targets": [
+        ["css=.btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='exampleModal']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8c6d9508-df0b-4708-b16f-72a078919d35",
+    "name": "test: Aceita termo PT",
+    "commands": [{
+      "id": "f8f0b655-dd6f-49e1-9784-a1c9a89e382b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82e928e1-c01c-470d-9463-d4b20aa17b98",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c05e3672-450c-4579-a518-443097376d28",
+      "comment": "",
+      "command": "click",
+      "target": "id=tbotao",
+      "targets": [
+        ["id=tbotao", "id"],
+        ["css=#tbotao", "css:finder"],
+        ["xpath=//button[@id='tbotao']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3098dd5b-107c-4c95-8ed7-a7cebc30e75d",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm",
+      "targets": [
+        ["id=confirm", "id"],
+        ["css=#confirm", "css:finder"],
+        ["xpath=//label[@id='confirm']", "xpath:attributes"],
+        ["xpath=//form[@id='quizform']/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Eu confirmo que li o termo de consentimento e concordo em participar desta pesquisa.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6e23a2c-a6db-4a56-a377-bb3c5e95427d",
+      "comment": "",
+      "command": "click",
+      "target": "id=cont",
+      "targets": [
+        ["id=cont", "id"],
+        ["css=#cont", "css:finder"],
+        ["xpath=//button[@id='cont']", "xpath:attributes"],
+        ["xpath=//form[@id='quizform']/button[2]", "xpath:idRelative"],
+        ["xpath=//form/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6e36a964-4ef8-42f6-a185-edf89168210f",
+    "name": "test: Aceita termo ESP",
+    "commands": [{
+      "id": "791bee28-e0a6-4344-9be8-428027324881",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3be63a30-7fe3-4c7a-97d2-292c16d07cc8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61c87001-b256-43df-ae74-92f00fb8239d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(2)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Español')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "773a9fd2-c1f6-40c4-b92f-bb1626e5eebf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=tbotao",
+      "targets": [
+        ["id=tbotao", "id"],
+        ["css=#tbotao", "css:finder"],
+        ["xpath=//button[@id='tbotao']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d48b62f0-aa8f-4db9-b6c1-bdb974861b4e",
+      "comment": "",
+      "command": "click",
+      "target": "id=tbotao",
+      "targets": [
+        ["id=tbotao", "id"],
+        ["css=#tbotao", "css:finder"],
+        ["xpath=//button[@id='tbotao']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ba64417-4e9f-40ef-9715-7fedf3fc585e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=tbotao",
+      "targets": [
+        ["id=tbotao", "id"],
+        ["css=#tbotao", "css:finder"],
+        ["xpath=//button[@id='tbotao']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fefd4bc8-008a-487b-ac4e-6f8b3f13cb56",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm",
+      "targets": [
+        ["id=confirm", "id"],
+        ["css=#confirm", "css:finder"],
+        ["xpath=//label[@id='confirm']", "xpath:attributes"],
+        ["xpath=//form[@id='quizform']/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Yo confirmo que leí las condiciones de consentimiento y acepto participar en esta investigación.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22a3614c-da62-45aa-9741-07f3cc5ac014",
+      "comment": "",
+      "command": "click",
+      "target": "id=cont",
+      "targets": [
+        ["id=cont", "id"],
+        ["css=#cont", "css:finder"],
+        ["xpath=//button[@id='cont']", "xpath:attributes"],
+        ["xpath=//form[@id='quizform']/button[2]", "xpath:idRelative"],
+        ["xpath=//form/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d7f85e7f-b570-41a0-bf0c-17655d8392ee",
+    "name": "teste: Aceita termo ENG",
+    "commands": [{
+      "id": "38f3c2c4-0dc2-4cc3-9d5b-b0a22deae535",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c25153c7-83a6-426f-8691-aff3930a8d30",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3e9b1ef-6374-4eef-b488-9d2e97356e44",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(3)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf4b1961-5014-4948-a358-365a34f102f9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=tbotao",
+      "targets": [
+        ["id=tbotao", "id"],
+        ["css=#tbotao", "css:finder"],
+        ["xpath=//button[@id='tbotao']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54a0930b-e635-484e-91fe-013fbe8f83da",
+      "comment": "",
+      "command": "click",
+      "target": "id=tbotao",
+      "targets": [
+        ["id=tbotao", "id"],
+        ["css=#tbotao", "css:finder"],
+        ["xpath=//button[@id='tbotao']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7179e6c6-613f-475a-9f4f-11cf5a169f59",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=tbotao",
+      "targets": [
+        ["id=tbotao", "id"],
+        ["css=#tbotao", "css:finder"],
+        ["xpath=//button[@id='tbotao']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "841184c3-7ecf-44d1-a150-bb8d247a1f46",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm",
+      "targets": [
+        ["id=confirm", "id"],
+        ["css=#confirm", "css:finder"],
+        ["xpath=//label[@id='confirm']", "xpath:attributes"],
+        ["xpath=//form[@id='quizform']/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'I confirm that I have read the consent conditions and agree to participate in this research.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd33b902-5615-48bd-a30e-f974026b6abc",
+      "comment": "",
+      "command": "click",
+      "target": "id=cont",
+      "targets": [
+        ["id=cont", "id"],
+        ["css=#cont", "css:finder"],
+        ["xpath=//button[@id='cont']", "xpath:attributes"],
+        ["xpath=//form[@id='quizform']/button[2]", "xpath:idRelative"],
+        ["xpath=//form/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e9500380-284b-4b20-8201-d4a81e98de8f",
+    "name": "test: Aceita termo ENG",
+    "commands": [{
+      "id": "3c3a79d1-21b1-4565-b367-b0a5551bd111",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8550c52-716d-432c-84c4-95d95fcbe83f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb91d2b0-d2d2-40cf-91d4-0eca8b713729",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-idioma:nth-child(3)",
+      "targets": [
+        ["css=.botao-idioma:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "529ce798-54f6-479a-8562-dae6bd9501c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=tbotao",
+      "targets": [
+        ["id=tbotao", "id"],
+        ["css=#tbotao", "css:finder"],
+        ["xpath=//button[@id='tbotao']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f513879d-5f51-45a9-bc4f-da61ffc5bf33",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm",
+      "targets": [
+        ["id=confirm", "id"],
+        ["css=#confirm", "css:finder"],
+        ["xpath=//label[@id='confirm']", "xpath:attributes"],
+        ["xpath=//form[@id='quizform']/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'I confirm that I have read the consent conditions and agree to participate in this research.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4440d96f-5355-418b-bf83-1af755ea4dfe",
+      "comment": "",
+      "command": "click",
+      "target": "id=cont",
+      "targets": [
+        ["id=cont", "id"],
+        ["css=#cont", "css:finder"],
+        ["xpath=//button[@id='cont']", "xpath:attributes"],
+        ["xpath=//form[@id='quizform']/button[2]", "xpath:idRelative"],
+        ["xpath=//form/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d94fcbf-b96d-4364-89b4-7793f584af0f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6139796a-152e-47fa-a1b8-26624caeae5c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://criptologista.com/"],
+  "plugins": []
+}
