@@ -20,7 +20,10 @@
 }
 
 .header-3 {
-    background-color:rgb(96, 219, 223); 
+    background-image: url("../imagens/pintura.svg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed fixed;
 }
 
 .header-4 {
