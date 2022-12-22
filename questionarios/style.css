@@ -21,6 +21,13 @@
     color: #162746;
 }
 
+.header-2 p {
+    padding: 20px 40px;
+    background-color: #FACA35;
+    border-radius: 25px;
+    text-align: center;
+}
+
 .header-3 {
     background-image: url("../imagens/pintura.svg");
     background-size: cover;
