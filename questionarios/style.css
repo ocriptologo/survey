@@ -14,8 +14,10 @@
 }
 
 .header-2 {
-    background: bottom / contain no-repeat url("../imagens/pessoas-sentadas.svg");
-    background-color:  #FACA35;
+    background-image: url("../imagens/pessoas-sentadas-amarelo.svg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed fixed;
     color: #162746;
 }
 
