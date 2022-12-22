@@ -14,7 +14,9 @@
 }
 
 .header-2 {
-    background-color:rgb(96, 100, 223); 
+    background: bottom / contain no-repeat url("../imagens/pessoas-sentadas.svg");
+    background-color:  #FACA35;
+    color: #162746;
 }
 
 .header-3 {
