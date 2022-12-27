@@ -34,6 +34,14 @@
     background-attachment: fixed fixed;
 }
 
+.header-3 p {
+    padding: 20px 40px;
+    background-color: #162746;
+    border-radius: 25px;
+    text-align: center;
+    color: #d6dff2;
+}
+
 .header-4 {
     background-color:rgb(255, 231, 47); 
 }
