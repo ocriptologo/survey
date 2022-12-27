@@ -43,9 +43,16 @@
 }
 
 .coluna-questionario {
-    background-color: #fff3ce;
     color: #162746;
     font-size: 1.1rem;
+}
+
+.fundo-azul {
+    background-color: #d6dff2;
+}
+
+.fundo-amarelo {
+    background-color: #fff3ce;
 }
 
 .coluna-perguntas {
