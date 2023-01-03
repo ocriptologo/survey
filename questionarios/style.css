@@ -73,8 +73,8 @@
 }
 
 .coluna-perguntas {
-    height: 90vh; 
-    min-height: fit-content; 
+    height: fit-content; 
+    min-height: 90vh; 
     align-items: center; 
     justify-content: center;
     margin-inline: 10%;
