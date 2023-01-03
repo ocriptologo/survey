@@ -149,3 +149,6 @@ function setvalue(radioid, inputid){
 	document.getElementById(radioid).setAttribute('value', text_input);
 
 }
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
