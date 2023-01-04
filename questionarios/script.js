@@ -74,9 +74,6 @@ function isValid(current){
 		}
 		
 	}
-	
-
-
 	return valid;
 }
 
@@ -105,24 +102,6 @@ function bloqueia_outros(x, y) {
         text.style.display = "none";
     } else {
         text.style.display = "block";
-    }
-}
-
-function deficiencia(x, y, z) {
-    // Get the checkbox
-    var checkBox = document.getElementById(x);
-    // Get the output text
-    var text = document.getElementById(y);
-	// Get the output text
-    var text1 = document.getElementById(z);
-
-    // If the checkbox is checked, display the output text
-    if (checkBox.checked == true){
-        text.style.display = "block";
-		text1.style.display = "block";
-    } else {
-        text.style.display = "none";
-		text1.style.display = "none";
     }
 }
 
