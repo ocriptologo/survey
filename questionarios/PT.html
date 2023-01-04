@@ -591,11 +591,13 @@
                       </div>
 
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Cor da pele e etnias específicas" id="cor-da-pele" name="Publicos">
+                        <input class="form-check-input" type="checkbox" value="Cor da pele e etnias específicas" id="cor-da-pele" name="Publicos" onclick="outros('cor-da-pele','cor-etnias')">
                         <label class="form-check-label" for="cor-da-pele">
                           Cor da pele e etnias específicas
                         </label>
                       </div>
+
+                      <input type="text" class="form-control form-control-md" id="cor-etnias" style="display:none" placeholder="Quais?" name="CorEtnias">
 
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="Não sei" id="naosei3" name="Publicos">
