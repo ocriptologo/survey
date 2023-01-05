@@ -35,7 +35,7 @@ function isValid(current){
 	if (textInputs != null){
 		for (i = 0; i < textInputs.length; i++) {
 		// If a field is empty...
-		if ((textInputs[i].value == "") && textInputs[i].style.display!='none') {
+		if ((textInputs[i].value == "") && (textInputs[i].style.display!='none') && !(textInputs[i].classList.contains('opcional'))) {
 			
 		valid = false;
 		}
