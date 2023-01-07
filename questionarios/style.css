@@ -4,6 +4,7 @@
     justify-content: center;
     padding: 5%;
     font-size: 3rem;
+    text-align: center;
 }
 
 .header-1 {
@@ -24,7 +25,6 @@
     padding: 20px 40px;
     background-color: #FACA35;
     border-radius: 25px;
-    text-align: center;
 }
 
 .header-3, .header-4 {
@@ -38,7 +38,6 @@
     padding: 20px 40px;
     background-color: #162746;
     border-radius: 25px;
-    text-align: center;
     color: #d6dff2;
 }
 
@@ -46,7 +45,6 @@
     padding: 20px 40px;
     background-color: #162746;
     border-radius: 25px;
-    text-align: center;
     color: #d6dff2;
     font-size: 40px;
 }
