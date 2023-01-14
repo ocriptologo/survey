@@ -29,7 +29,7 @@
     color:  #FACA35;
 }
 
-.header-2 {
+.header-2, #página-seção-2 {
     background-image: url("../imagens/pessoas-sentadas-amarelo.svg");
     background-size: cover;
     background-position: center;
@@ -37,7 +37,7 @@
     color: #162746;
 }
 
-.header-2 p {
+.header-2 p, #página-seção-2 h1 {
     padding: 20px 40px;
     background-color: #FACA35;
     border-radius: 25px;
