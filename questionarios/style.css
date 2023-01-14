@@ -1,3 +1,19 @@
+.página-seção {
+	height: 100vh; 
+	text-align: center;
+    align-items: center; 
+    justify-content: center;
+}
+
+.página-seção p {
+    text-align: center;
+}
+
+#página-seção-1 {
+    background-color: #162746;
+    color:  #FACA35;
+}
+
 .coluna-header {
     min-height: 100vh; 
     align-items: center; 
