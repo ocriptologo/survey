@@ -50,7 +50,7 @@
     background-attachment: fixed fixed;
 }
 
-.header-3 p {
+.header-3 p, #página-seção-3 h1 {
     padding: 20px 40px;
     background-color: #162746;
     border-radius: 25px;
@@ -70,7 +70,8 @@
 }
 
 .header-5 {
-    background-color:rgb(150, 150, 150); 
+    background: center/ contain no-repeat url("../imagens/mapa-colorido.svg");
+    background-color:  #FACA35;
 }
 
 .coluna-questionario {
@@ -107,4 +108,10 @@
     background-color: #162746;
     border-color: #162746;
     color: #FACA35;
+}
+
+.btn-alt {
+    color: #162746;
+    background-color: #d6dff2;
+    border-color: #162746;
 }
