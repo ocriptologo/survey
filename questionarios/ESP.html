@@ -23,9 +23,34 @@
     <form id="form">
       <!----------------------------- SEÇÃO 1 ---------------------------------->
 
+      <!-- Página de Introdução da Seção 1 -->
+      <div id="página-seção-1" class="container-fluid">
+
+        <div class="row página-seção">
+
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <img src="../imagens/selos-superior.svg" style="height: 25vmin; min-height: 80px;">
+          </div>
+          <div class="col-sm-10 col-md-5 col-lg-5">
+            <h1>¡ESTAMOS FELICES DE QUE HAYA ELEGIDO PARTICIPAR!</h1>
+          </div>
+          <div class="col-sm-10 col-md-5 col-lg-5">
+            <h1>Para empezar, nos gustaría saber un poco sobre sus actividades profesionales</h1>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <img src="../imagens/selos-inferior.svg" style="height: 25vmin; min-height: 80px;">
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <button type="button" class="btn btn-warning" href="#" onclick="return showp('página1','página-seção-1');">Continuar</button>
+          </div>
+
+        </div>
+      </div>
+      
       <!-- Página 1 -->
       <!-- Container principal da página -->
-      <div id="página1" class="container-fluid">
+      <div id="página1" class="container-fluid" style="display:none">
         <div class="row">
 
           <!-- Coluna Header (título / texto sobre a seção) -->
@@ -102,6 +127,7 @@
             <div class="container px-4">
               <div class="row gx-5">
                 <div class="coluna-botao col d-flex">
+                  <button type="button" class="btn btn-warning btn-questionario" style="margin:5px;" href="#" onclick="return showp('página-seção-1','página1');">Pregunta anterior</button>
                   <button type="button" class="btn btn-warning btn-questionario" href="#" onclick="return show('página2','página1');">Próxima pregunta</button>
                 </div>
               </div>
