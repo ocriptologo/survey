@@ -43,7 +43,7 @@
     border-radius: 25px;
 }
 
-.header-3, .header-4 {
+.header-3, .header-4, #página-seção-3 {
     background-image: url("../imagens/pintura.svg");
     background-size: cover;
     background-position: center;
