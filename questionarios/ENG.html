@@ -1832,6 +1832,54 @@
         <div class="row">
 
           <!-- Coluna Header (título / texto sobre a seção) -->
+          <div class="coluna-header header-4 col-md-6 d-md-flex d-none">
+            <p>Your ideas about some terms circulating in museums</p>
+          </div>
+          
+          <!-- Coluna Questionário (perguntas + botão) -->
+          <div class="coluna-questionario fundo-azul col-sm-12 col-md-6 col-lg-6">
+
+            <!-- Container para as Perguntas -->
+            <div class="container px-4">
+              <div class="row gx-5">
+                <div class="coluna-perguntas col d-flex">
+
+                  <div class="row">
+
+                    <!-- Pergunta 8 [Seção 4] -->
+
+                    <div class="form-group">
+                      <label for="outros-termos" class="form-label">In addition to the terms mentioned above, do you frequently use other words in your practice regarding public involviment or practices aimed at social transformation? Which?</label>
+                      <textarea class="form-control" id="outros-termos" placeholder="Responda aqui" rows="5"  name="OutrosTermos"></textarea>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Container para o Botão -->
+            <div class="container px-4">
+              <div class="row gx-5">
+                <div class="coluna-botao col d-flex">
+                  <button type="button" class="btn btn-warning btn-questionario" style="margin:5px;" href="#" onclick="return showp('página21','página22');">Previous Page</button>             
+                  <button type="button" class="btn btn-warning btn-questionario" href="#" onclick="return show('página23','página22');">Next Page</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Página 23 -->
+      <!-- Container principal da página -->
+      <div id="página23" class="container-fluid" style="display:none">
+        <div class="row">
+
+          <!-- Coluna Header (título / texto sobre a seção) -->
           <div class="coluna-header header-5 col-md-6 d-md-flex d-none">
             <p>Thank you for your important participation!</p>
           </div>
@@ -1869,7 +1917,7 @@
             <div class="container px-4">
               <div class="row gx-5">
                 <div class="coluna-botao col d-flex">
-                  <button type="button" class="btn btn-warning btn-questionario" style="margin:5px;" href="#" onclick="return showp('página21','página22');">Previous Page</button>             
+                  <button type="button" class="btn btn-warning btn-questionario" style="margin:5px;" href="#" onclick="return showp('página22','página23');">Previous Page</button>             
                   <button type="submit" class="btn btn-warning btn-questionario" href="#";">Finish and Send</button>
                 </div>
               </div>
