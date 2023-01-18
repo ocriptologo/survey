@@ -1957,7 +1957,7 @@
         responseBody.set('Area', t5)
        
         fetch(scriptURL, { method: 'POST', body: responseBody })
-          .then(response => { alert('Success, your answer has been recorded!', response) })
+          .then(response => { alert('Success, your answer has been recorded!', response); window.location="../final/thankyou.html";})
           .catch(error => alert('Error, please try again!', error.message))
       })
     </script>
