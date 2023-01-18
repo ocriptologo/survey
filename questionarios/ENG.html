@@ -662,7 +662,7 @@
               <div class="row gx-5">
                 <div class="coluna-botao col d-flex">
                   <button type="button" class="btn btn-warning btn-questionario" style="margin:5px;" href="#" onclick="return showp('página4','página5');">Previous Question</button>             
-                  <button type="button" class="btn btn-warning btn-questionario" href="#" onclick="return show('página6','página5');">Next Question</button>
+                  <button type="button" class="btn btn-warning btn-questionario" href="#" onclick="return show('página-seção-2','página5');">Next Question</button>
                 </div>
               </div>
             </div>
@@ -673,6 +673,23 @@
       </div>
 
       <!----------------------------- SEÇÃO 2 ---------------------------------->
+
+      <!-- Página de Introdução da Seção 2 -->
+      <div id="página-seção-2" class="container-fluid" style="display:none">
+
+        <div class="row página-seção">
+
+          <div class="col-10">
+            <h1>In this section we would like to know a little about you</h1>
+          </div>
+
+          <div class="col col-12 d-flex justify-content-center align-self-center">
+            <button type="button" class="btn btn-warning" style="margin:5px;" href="#" onclick="return showp('página5','página-seção-2');">Previous Question</button>   
+            <button type="button" class="btn btn-warning" style="margin:5px;" href="#" onclick="return showp('página6','página-seção-2');">Continue</button>
+          </div>
+
+        </div>
+      </div>
 
       <!-- Página 6 -->
       <!-- Container principal da página -->
@@ -712,7 +729,7 @@
             <div class="container px-4">
               <div class="row gx-5">
                 <div class="coluna-botao col d-flex">
-                  <button type="button" class="btn btn-warning btn-questionario" style="margin:5px;" href="#" onclick="return showp('página5','página6');">Previous Question</button>             
+                  <button type="button" class="btn btn-warning btn-questionario" style="margin:5px;" href="#" onclick="return showp('página-seção-2','página6');">Previous Question</button>             
                   <button type="button" class="btn btn-warning btn-questionario" href="#" onclick="return show('página7','página6');">Next Question</button>
                 </div>
               </div>
