@@ -1960,7 +1960,7 @@
         responseBody.set('Area', t5)
        
         fetch(scriptURL, { method: 'POST', body: responseBody })
-          .then(response => { alert('¡Éxito, tu respuesta ha sido registrada!', response) })
+          .then(response => { alert('¡Éxito, tu respuesta ha sido registrada!', response); window.location="../final/gracias.html";})
           .catch(error => alert('¡Error, inténtalo de nuevo!', error.message))
       })
     </script>
