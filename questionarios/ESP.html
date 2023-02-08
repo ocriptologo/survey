@@ -163,7 +163,7 @@
                     <!-- Pergunta 3 [Seção 1] -->
                     <div class="form-group" id="cargo-museu">
                       
-                      <label for="cargo-museu" class="form-label">Indique su cargo o función en el museo en el que trabaja actualmente (marque tantas opciones como desee):</label>
+                      <label for="cargo-museu" class="form-label">Indique, por favor, su cargo o función en el museo en el que trabaja actualmente (marque tantas opciones como desee):</label>
 
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="Educador(a)" id="educador" name="Cargo">
@@ -203,7 +203,7 @@
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="Voluntário(a)" id="voluntario" name="Cargo">
                         <label class="form-check-label" for="voluntario">
-                          Voluntario(a
+                          Voluntario(a)
                         </label>
                       </div>
 
@@ -280,7 +280,7 @@
                         <label class="form-check-label" for="outro0">
                           Otro
                         </label>
-                        <input type="text" class="form-control form-control-md" id="outro0_input" style="display:none" placeholder="¿Cual?" name="Cargo">
+                        <input type="text" class="form-control form-control-md" id="outro0_input" style="display:none" placeholder="¿cuál?" name="Cargo">
                       </div>
 
                     </div>
@@ -355,6 +355,20 @@
                       </div>
 
                       <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Avaliação" id="avaliacao" name="RelacaoTrabalho">
+                        <label class="form-check-label" for="avaliacao">
+                          Evaluación
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Pesquisa" id="pesquisa" name="RelacaoTrabalho">
+                        <label class="form-check-label" for="pesquisa">
+                          Investigación
+                        </label>
+                      </div>
+
+                      <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="Prefiro não informar" id="naoinformar1" name="RelacaoTrabalho">
                         <label class="form-check-label" for="naoinformar1">
                           Prefiero no contestar
@@ -373,7 +387,7 @@
                         <label class="form-check-label" for="outro1">
                           Otro
                         </label>
-                        <input type="text" class="form-control form-control-md" id="outro1_input" style="display:none" placeholder="¿Cual?" name="RelacaoTrabalho">
+                        <input type="text" class="form-control form-control-md" id="outro1_input" style="display:none" placeholder="¿cuál?" name="RelacaoTrabalho">
                       </div>
 
                     </div>
@@ -455,6 +469,13 @@
                       </div>
 
                       <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Em ações permanentes no espaço do museu" id="permanentes" name="Trabalha">
+                        <label class="form-check-label" for="permanentes">
+                          En acciones permanentes en el espacio del museo
+                        </label>
+                      </div>
+
+                      <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="Não sei" id="naosei2" name="Trabalha">
                         <label class="form-check-label" for="naosei2">
                           No sé
@@ -473,7 +494,7 @@
                         <label class="form-check-label" for="outro2">
                           Otro
                         </label>
-                        <input type="text" class="form-control form-control-md" id="outro2_input" style="display:none" placeholder="¿Cual?" name="Trabalha">
+                        <input type="text" class="form-control form-control-md" id="outro2_input" style="display:none" placeholder="¿cuál?" name="Trabalha">
                       </div>
 
                     </div>
@@ -522,7 +543,7 @@
                   <div class="row">
 
                     <!-- Pergunta 6 [Seção 1] -->
-                    <label for="trabalho-museu" class="form-label">En el museo donde trabajas, ¿hay acciones para públicos específicos? En caso afirmativo, ¿cuáles?</label>
+                    <label for="trabalho-museu" class="form-label">En el museo en el que trabaja, ¿hay acciones para públicos específicos? En caso afirmativo, ¿cuáles?</label>
 
                     <div id="trabalho-museu" class="form-group mb-3" >
                       <div class="form-check">
@@ -698,7 +719,7 @@
           <!-- Coluna Header (título / texto sobre a seção) -->
           <div class="coluna-header header-2 col-md-6 d-md-flex d-none">
             <div>
-              <p>ACERCA DE TI</p>
+              <p>SOBRE USTED</p>
             </div>
           </div>
           
@@ -747,7 +768,7 @@
           <!-- Coluna Header (título / texto sobre a seção) -->
           <div class="coluna-header header-2 col-md-6 d-md-flex d-none">
             <div>
-              <p>ACERCA DE TI</p>
+              <p>SOBRE USTED</p>
             </div>
           </div>
           
@@ -769,7 +790,7 @@
                       <div class="form-check">
                         <input class="form-check-input" name="Genero" type="radio" value="Feminina Cisgênero" id="fem-cis" onclick="bloqueia_outros('fem-cis','outro4_input')">
                         <label class="form-check-label" for="fem-cis">
-                          Mujer Cis 
+                          Mujer Cisgénero 
                           <a tabindex="0" class="bi bi-question-circle" role="button" data-bs-toggle="popover" data-bs-trigger="focus, hover" data-bs-content="Persona que se identifica con el género que le fue asignado al nacer"></a>
                         </label>
                       </div>
@@ -777,7 +798,7 @@
                       <div class="form-check">
                         <input class="form-check-input" name="Genero" type="radio" value="Feminina Transgênero" id="fem-trans" onclick="bloqueia_outros('fem-trans','outro4_input')">
                         <label class="form-check-label" for="fem-trans">
-                          Mujer Trans
+                          Mujer Transgénero
                           <a tabindex="0" class="bi bi-question-circle" role="button" data-bs-toggle="popover" data-bs-trigger="focus, hover" data-bs-content="Persona que no se identifica con el género que le fue asignado al nacer"></a>
                         </label>
                       </div>
@@ -785,7 +806,7 @@
                       <div class="form-check">
                         <input class="form-check-input" name="Genero" type="radio" value="Masculino Cisgênero" id="mas-cis" onclick="bloqueia_outros('mas-cis','outro4_input')">
                         <label class="form-check-label" for="mas-cis">
-                          Hombre Cis
+                          Hombre Cisgénero
                           <a tabindex="0" class="bi bi-question-circle" role="button" data-bs-toggle="popover" data-bs-trigger="focus, hover" data-bs-content="Persona que se identifica con el género que le fue asignado al nacer"></a>
                         </label>
                       </div>
@@ -793,7 +814,7 @@
                       <div class="form-check">
                         <input class="form-check-input" name="Genero" type="radio" value="Masculino Transgênero" id="mas-trans" onclick="bloqueia_outros('mas-trans','outro4_input')">
                         <label class="form-check-label" for="mas-trans">
-                          Hombre Trans
+                          Hombre Transgénero
                           <a tabindex="0" class="bi bi-question-circle" role="button" data-bs-toggle="popover" data-bs-trigger="focus, hover" data-bs-content="Persona que no se identifica con el género que le fue asignado al nacer"></a>
                         </label>
                       </div>
@@ -809,7 +830,7 @@
                       <div class="form-check">
                         <input class="form-check-input" name="Genero" type="radio" value="Pessoa não-binária" id="nao-binaria" onclick="bloqueia_outros('nao-binaria','outro4_input')">
                         <label class="form-check-label" for="nao-binaria">
-                          Persona no binaria
+                          Persona no-binária
                           <a tabindex="0" class="bi bi-question-circle" role="button" data-bs-toggle="popover" data-bs-trigger="focus, hover" data-bs-content="Persona cuya identidad de género y expresión de género no se limitan a hombres y mujeres"></a>
                         </label>
                       </div>
@@ -824,15 +845,15 @@
                       <div class="form-check">
                         <input class="form-check-input" name="Genero" type="radio" value="Outro" id="outro4" onclick="outros('outro4','outro4_input');">
                         <label class="form-check-label" for="outro4">
-                          Otros
+                          Otra
                         </label>
-                        <input type="text" class="form-control form-control-md" id="outro4_input" style="display:none" placeholder="¿Cual?" name="Genero">
+                        <input type="text" class="form-control form-control-md" id="outro4_input" style="display:none" placeholder="¿cuál?" name="Genero">
                       </div>
 
                     </div>    
                     
                     <!-- Pergunta 3 [Seção 2] -->
-                    <label for="cor-etnia" class="form-label">¿Cómo declaras tu color y/o etnia?
+                    <label for="cor-etnia" class="form-label">¿Cómo declaras tu color o etnia?
                     </label>
                     <div class="form-group mb-3" >
                       <input type="text" class="form-control form-control-md" id="cor-etnia" placeholder="Mi autodeclaración de color y/o etnia" name="Etnia">
@@ -867,7 +888,7 @@
           <!-- Coluna Header (título / texto sobre a seção) -->
           <div class="coluna-header header-2 col-md-6 d-md-flex d-none">
             <div>
-              <p>ACERCA DE TI</p>
+              <p>SOBRE USTED</p>
             </div>
           </div>
           
@@ -966,7 +987,7 @@
                   <div class="row">
 
                     <!-- Pergunta 5 [Seção 2] -->
-                    <label for="formacao" class="form-label">¿Cuál es su formación completa?</label>
+                    <label for="formacao" class="form-label">¿Cuál es su última formación completa?</label>
 
                     <div id="formacao" class="form-group mb-3">
                       <div class="form-check">
@@ -1000,7 +1021,7 @@
                       <div class="form-check">
                         <input class="form-check-input" name="Formacao" type="radio" value="Pós-graduação" id="pos-graduacao" onclick="bloqueia_outros('pos-graduacao','outro5_input')">
                         <label class="form-check-label" for="pos-graduacao">
-                          Postgrado
+                          Posgrado
                         </label>
                       </div>
                       
@@ -1014,7 +1035,7 @@
                       <div class="form-check">
                         <input class="form-check-input" name="Formacao" type="radio" value="Outro" id="outro5" onclick="outros('outro5','outro5_input')">
                         <label class="form-check-label" for="outro5">
-                          Otro
+                          Otra
                         </label>
                         <input type="text" class="form-control form-control-md" id="outro5_input" style="display:none" placeholder="¿Cual?" name="Formacao">
                       </div>
@@ -1066,7 +1087,7 @@
                   <div class="row">
 
                     <!-- Pergunta 6 [Seção 2] -->
-                    <label for="area-formacao" class="form-label">¿En qué área(s) usted se formó?</label>
+                    <label for="area-formacao" class="form-label">¿En qué área(s) usted se formó? (marque tantas opciones como desee)</label>
 
                     <div id="area-formacao" class="form-group mb-3">
                       
@@ -1164,7 +1185,7 @@
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="Outros" id="outro6" onclick="outros('outro6','outro6_input')">
                         <label class="form-check-label" for="outro6">
-                          Otros
+                          Otra
                         </label>
                         <input type="text" class="form-control form-control-md" id="outro6_input" style="display:none" placeholder="¿Cual?" name="Area">
                       </div>
