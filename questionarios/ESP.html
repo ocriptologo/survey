@@ -1176,11 +1176,13 @@
                       </div>
 
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Formação não acadêmica (educação popular, educação comunitária, educação não formal, naturalista etc)" id="nao-academica" name="Area">
+                        <input class="form-check-input" type="checkbox" value="Formação não acadêmica (educação popular, educação comunitária, educação não formal, naturalista etc)" id="nao-academica" name="Area" onclick="outros('nao-academica','nao-academica_input')">
                         <label class="form-check-label" for="nao-academica">
                           Formación no académica (educación popular, educación comunitaria, educación no formal, naturalista etc.)
                         </label>
                       </div>
+
+                      <input type="text" class="form-control form-control-md" id="nao-academica_input" style="display:none" placeholder="¿cuál?" name="NaoAcademica">
 
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="Prefiro não informar" id="naosei6" name="Area">
