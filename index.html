@@ -73,6 +73,10 @@
 							data-bs-toggle="modal" data-bs-target="#exampleModal">Continuar</button>
 						</div>
 					</div>
+
+					<div class="mt-4">
+						<p id="email-contato"><b>E-mail para contato: pesquisamuseus@usp.br</b></p>
+					</div>
 					
 				</div>
 
@@ -154,6 +158,8 @@
 				document.getElementById('tempo').innerHTML='<b>Tempo estimado de resposta: 20 minutos</b>';
 				document.getElementById('prosseguir').innerHTML='Você trabalha com ações educativas ou comunicacionais em museus de C&T na América Latina ou Caribe? Então clique em continuar para conhecer os termos da sua participação.';
 				document.getElementById('tbotao').innerHTML='Continuar';
+
+				document.getElementById('email-contato').innerHTML='E-mail para contato: pesquisamuseus@usp.br';
 				
 				const el = document.getElementsByClassName('botao-idioma')
 				el[0].setAttribute('class', 'botao-idioma btn btn-outline-dark m-2');
@@ -195,6 +201,8 @@
 				document.getElementById('prosseguir').innerHTML='Usted trabaja con acciones educativas o de comunicación en museos de C&T de América Latina o el Caribe? Entonces comience haciendo clic en continuar para conocer las condiciones de su participación.';
 				document.getElementById("tbotao").innerHTML="Continuar";
 
+				document.getElementById('email-contato').innerHTML='<b>Correo eletrónico para contacto: pesquisamuseus@usp.br</b>';
+				
 				const el = document.getElementsByClassName('botao-idioma')
 				el[0].setAttribute('class', 'botao-idioma btn btn-dark m-2');
 				el[1].setAttribute('class', 'botao-idioma btn btn-outline-dark m-2');
@@ -234,6 +242,8 @@
 				document.getElementById('prosseguir').innerHTML='Do you work with educational or communication actions in S&T museums in Latin America or Caribbean? Then get started by clicking continue to know the terms of your participation.';
 				document.getElementById("tbotao").innerHTML="Continue";
 
+				document.getElementById('email-contato').innerHTML='<b>Contact email: pesquisamuseus@usp.br</b>';
+
 				const el = document.getElementsByClassName('botao-idioma')
 				el[0].setAttribute('class', 'botao-idioma btn btn-outline-dark m-2');
 				el[1].setAttribute('class', 'botao-idioma btn btn-outline-dark m-2');
@@ -251,6 +261,7 @@
 
 				document.getElementById('fech').innerHTML='Close';
 				document.getElementById('cont').innerHTML='Continue';
+
 			
 				document.getElementById("quizform").action="questionarios/ENG.html";
 			}
