@@ -20,7 +20,8 @@
 
   <body>
     <p id="language" style="display:none;">ENG</p>
-    <form id="form">
+    <form id="form" onsubmit="submeter.disabled=true; return true;">
+    
       <!----------------------------- SEÇÃO 1 ---------------------------------->
 
       <!-- Página de Introdução da Seção 1 -->
@@ -1909,7 +1910,7 @@
               <div class="row gx-5">
                 <div class="coluna-botao col d-flex">
                   <button type="button" class="btn btn-warning btn-questionario" style="margin:5px;" href="#" onclick="return showp('página22','página23');">Previous Page</button>             
-                  <button type="submit" class="btn btn-warning btn-questionario" href="#";">Finish and Send</button>
+                  <button type="submit" name="submeter" value="Submit" class="btn btn-warning btn-questionario" href="#";">Finish and Send</button>
                 </div>
               </div>
             </div>
